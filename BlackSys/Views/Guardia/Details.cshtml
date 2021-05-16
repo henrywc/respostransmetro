@@ -1,0 +1,38 @@
+﻿@model BlackSys.Models.Modelos_transmetro.ConsultarGuardia
+
+@{
+    ViewBag.Title = "Detalles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Detalle de Guardia</h4>
+    <hr />
+    @foreach (var lista in ViewBag.Guardias)
+    {
+        <dl class="dl-horizontal">
+
+            <div class="card-body text-center">
+
+                <h4>Nombre: @lista.nombre_guardia</h4>
+                <h4>Dirección: @lista.direccion_guardia</h4>
+                <h4>Correo: @lista.correo_guardia</h4>
+                <h4>Edad: @lista.edad_guardia</h4>
+                <h4>Telefono: @lista.telefono_guardia</h4>
+                <h4>Celular: @lista.celular_guardia</h4>
+                <h4>Estación: @lista.nombre_acceso</h4>
+                <p>
+                    @Html.ActionLink("Editar", "Edit", new { id = lista.idguardia, }, new { @class = "btn btn-warning" }) |
+                    <a href="/Guardia/Index" class="btn btn-primary">Regresar al Listado</a>
+                </p>
+
+
+            </div>
+
+
+        </dl>
+
+    }
+</div>

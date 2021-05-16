@@ -1,0 +1,155 @@
+﻿
+@{
+    ViewBag.Title = "Editar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <link href="~/Content/bootstrap-select.css" rel="stylesheet" />
+</head>
+
+
+<h2>Editar Buses</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Buses</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <input type="text" id="txt_idbus" name="txt_idbus" value="@ViewBag.idbus" class="hidden" />
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Nombre Bus</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control" id="txt_nombre_bus" name="txt_nombre_bus" value="@ViewBag.nombre_bus" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Línea</label>
+            <div class="col-md-10">
+                @Html.DropDownList("dropdown_lineas", null, "", new { @id = "cmb_lineas", @onChange = "cmb_lineaschange(this.value)", @title = "Seleccione una Opción", @class = "form-control font selectpicker ", data_container = "body", data_live_search = "true", data_hide_disabled = "true" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Capacidad de pasajeros</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control" id="txt_capacidad" name="txt_capacidad" value="@ViewBag.capacidad" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Parqueo</label>
+            <div class="col-md-10">
+                @Html.DropDownList("dropdown_parqueos", null, "", new { @id = "cmb_parqueos", @onChange = "cmb_parqueoschange(this.value)", @title = "Seleccione una Opción", @class = "form-control font selectpicker ", data_container = "body", data_live_search = "true", data_hide_disabled = "true" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Piloto</label>
+            <div class="col-md-10">
+                @Html.DropDownList("dropdown_pilotos", null, "", new { @id = "cmb_pilotos", @onChange = "cmb_pilotoschange(this.value)", @title = "Seleccione una Opción", @class = "form-control font selectpicker ", data_container = "body", data_live_search = "true", data_hide_disabled = "true" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Guardar" class="btn btn-primary" id="btn-editar" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    <a href="/Bus/Index" class="btn btn-primary">Regresar al Listado</a>
+</div>
+
+<script src="~/Content/bootstrap-select.js"></script>
+
+<script>
+    $("body").on("click", "#btn-editar", function () {
+        var linid = document.getElementById("cmb_lineas");
+        if (linid.options[linid.selectedIndex].value === "") {
+            lid = 0
+        }
+        else {
+            lid = linid.options[linid.selectedIndex].value;
+        }
+        var parid = document.getElementById("cmb_parqueos");
+        paid = parid.options[parid.selectedIndex].value;
+        var pilid = document.getElementById("cmb_pilotos");
+        piid = pilid.options[pilid.selectedIndex].value;
+        var nombre_bus = document.getElementById("txt_nombre_bus").value;
+        var capacidad = document.getElementById("txt_capacidad").value;
+        var idbus = document.getElementById("txt_idbus").value;
+        var datos = new Array();
+        var dato = {};
+        dato.nombre_bus = nombre_bus;
+        dato.capacidad = capacidad;
+        dato.idlinea = lid;
+        dato.idparqueo = paid;
+        dato.idpiloto = piid;
+        dato.idbus = idbus;
+        datos.push(dato);
+        $.ajax({
+            type: "POST",
+            url: "/Bus/Edit",
+            data: JSON.stringify(datos),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (r) {
+            }
+        });
+    });
+</script>
+
+<script>
+    function cmb_parqueoschange(id) {
+        $.ajax({
+            type: "GET",
+            url: "/Bus/ValidarParqueo/" + id,
+            //data: JSON.stringify(datos),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (r) {
+                if (r.existe === 1) {
+                    alert("Parqueo ya asignado");
+                    swal("Error", "Parqueo ya asignado 2", "error");
+                    location.reload();
+                }
+            }
+        });
+    }
+</script>
+
+<script>
+    function cmb_lineaschange(id) {
+        var linid = document.getElementById("cmb_lineas");
+        if (linid.options[linid.selectedIndex].value === "") {
+            lid = 0
+        }
+        else {
+            lid = linid.options[linid.selectedIndex].value;
+        }
+        $.ajax({
+            type: "GET",
+            url: "/Bus/ValidarLinea/" + id,
+            //data: JSON.stringify(datos),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (r) {
+                if (r.existe === 2) {
+                    alert("Línea ya con Buses completos");
+                    location.reload();
+                }
+            }
+        });
+    }
+</script>
+
+
+

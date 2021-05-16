@@ -1,0 +1,34 @@
+﻿@model BlackSys.Models.Modelos_transmetro.ConsultarDistancia
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Detalles de Distancia entre Estaciones</h4>
+    <hr />
+    @foreach (var lista in ViewBag.Distancias)
+    {
+        <dl class="dl-horizontal">
+            <div class="card-body text-center">
+
+                <h4>Estación origen: @lista.estacion_origen</h4>
+                <h4>Estación destino: @lista.estacion_destino</h4>
+                <h4>Distancia: @lista.distancia</h4>
+                <h4>Línea: @lista.nombre_linea</h4>
+                <p>
+                    @Html.ActionLink("Editar", "Edit", new { id = lista.iddistancia, }, new { @class = "btn btn-warning" }) |
+                    @Html.ActionLink("Regresar a Listado", "Index", null, new { @class = "btn btn-primary" })
+                </p>
+
+
+            </div>
+
+
+        </dl>
+
+    }
+</div>

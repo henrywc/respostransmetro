@@ -1,0 +1,52 @@
+﻿
+
+@{
+    ViewBag.Title = "Lineas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Listado de Líneas</h2>
+
+<p>
+    @Html.ActionLink("Crear nueva línea", "Create",  null, new { @class = "btn btn-primary" })
+</p>
+<table class="table">
+    <tr>
+        <th class="hidden">
+            idlinea
+        </th>
+        <th>
+            Nombre Línea
+        </th>
+        <th>
+            Nombre Municipalidad
+        </th>
+        <th>Opciones</th>
+    </tr>
+
+@foreach (var lista in ViewBag.Lineas) {
+<tr>
+    <td class="hidden">
+        @lista.idlinea
+    </td>
+    <td>
+        @lista.nombre_linea
+    </td>
+    <td>
+        @lista.nombre_municipalidad
+    </td>
+    <td>
+        @Html.ActionLink("Detalles", "Details", new { id = lista.idlinea, }, new { @class = "btn btn-default" }) |
+        @Html.ActionLink("Editar",   "Edit",    new { id = lista.idlinea, }, new { @class = "btn btn-warning" }) |
+        @Html.ActionLink("Eliminar", "Delete",  new { id = lista.idlinea, }, new { @class = "btn btn-danger" })
+    </td>
+</tr>
+}
+
+</table>
+
+<script>
+    //$(document).ready(function () {
+    //    location.reload()
+    //});
+</script>

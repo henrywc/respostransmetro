@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Accesos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Listado de Accesos</h2>
+
+<p>
+    @Html.ActionLink("Crear nuevo acceso", "Create", null, new { @class = "btn btn-primary" })
+</p>
+<table class="table">
+    <tr>
+        <th class="hidden">
+            idacceso
+        </th>
+        <th>
+            Nombre Acceso
+        </th>
+        <th>
+            Nombre Estación
+        </th>
+        <th>Opciones</th>
+    </tr>
+
+    @foreach (var lista in ViewBag.Accesos)
+    {
+        <tr>
+            <td class="hidden">
+                @lista.idacceso
+            </td>
+            <td>
+                @lista.nombre_acceso
+            </td>
+            <td>
+                @lista.nombre_estacion
+            </td>
+            <td>
+                @Html.ActionLink("Detalles", "Details", new { id = lista.idacceso, }, new { @class = "btn btn-default" }) |
+                @Html.ActionLink("Editar", "Edit", new { id = lista.idacceso, }, new { @class = "btn btn-warning" }) |
+                @Html.ActionLink("Eliminar", "Delete", new { id = lista.idacceso, }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+
+</table>
+
+

@@ -1,0 +1,36 @@
+﻿@model BlackSys.Models.Modelos_transmetro.ConsultarPilotoDireccion
+
+@{
+    ViewBag.Title = "Detalles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Detalles de Dirección Piloto</h4>
+    <hr />
+    @foreach (var lista in ViewBag.PilotosDireccion)
+    {
+        <dl class="dl-horizontal">
+            <div class="card-body text-center">
+
+                <h4>Dirección: @lista.direccion_piloto</h4>
+                <h4>Zona: @lista.zona_piloto</h4>
+                <h4>Colonia: @lista.colonia_piloto</h4>
+                <h4>Municipio: @lista.municipio_piloto</h4>
+                <h4>Departamento: @lista.departamento_piloto</h4>
+                <h4>Piloto: @lista.nombre_piloto</h4>
+                <p>
+                    @Html.ActionLink("Editar", "Edit", new { id = lista.idpilotos_direccion, }, new { @class = "btn btn-warning" }) |
+                    <a href="/PilotoDireccion/Index" class="btn btn-primary">Regresar al Listado</a>
+                </p>
+
+
+            </div>
+
+
+        </dl>
+
+    }
+</div>

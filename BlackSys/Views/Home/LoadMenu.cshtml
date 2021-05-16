@@ -1,0 +1,116 @@
+﻿@model IEnumerable<BlackSys.Models.SEC_MENU_MODEL>
+
+    <style type="text/css">
+        .dropdown-submenu {
+            position: relative;
+        }
+
+            .dropdown-submenu > .dropdown-menus {
+                top: 0;
+                left: 100%;
+                margin-top: -6px;
+                margin-left: -1px;
+                -webkit-border-radius: 0 6px 6px 6px;
+                -moz-border-radius: 0 6px 6px;
+                border-radius: 0 6px 6px 6px;
+            }
+
+            .dropdown-submenu:hover > .dropdown-menus {
+                display: block;
+            }
+
+            .dropdown-submenu > a:after {
+                display: block;
+                content: " ";
+                float: right;
+                width: 0;
+                height: 0;
+                border-color: transparent;
+                border-style: solid;
+                border-width: 5px 0 5px 5px;
+                border-left-color: #ccc;
+                margin-top: 5px;
+                margin-right: -10px;
+            }
+
+            .dropdown-submenu:hover > a:after {
+                border-left-color: #fff;
+            }
+
+            .dropdown-submenu.pull-left {
+                float: none;
+            }
+
+                .dropdown-submenu.pull-left > .dropdown-menus {
+                    left: -100%;
+                    margin-left: 10px;
+                    -webkit-border-radius: 6px 0 6px 6px;
+                    -moz-border-radius: 6px 0 6px 6px;
+                    border-radius: 6px 0 6px 6px;
+                }
+    </style>
+    @foreach (var menu in Model)
+    {
+        if (menu.ParentMenuID == 0)
+        {
+            <li class="nav-item">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="@menu.MenuIcon"></i>
+                    <span class="title">@menu.DisplayName</span>
+                    <span class="arrow"></span>
+                </a>
+                @*@foreach (var child in Model)
+                {
+                    if (child.ParentMenuID == menu.MenuID)
+                    {*@
+
+                <ul class="sub-menu">
+
+                    @foreach (var childx in Model)
+                    {
+                        if (childx.ParentMenuID == menu.MenuID && childx.MenuIcon == "LV2")//valida si el submenu es de nivel 2 para
+                                                                                           //agregar el dropdown a la lista y poder visualizar el nivel 3
+                        {
+                            <li class="dropdown-submenu">
+                                <a href="@childx.MenuURL" class="nav-toggle nav-link">
+                                    <span class="title">@childx.DisplayName</span>
+                                </a>
+                                <ul class="dropdown-menu">
+
+                                    @foreach (var childy in Model)
+                                    {
+
+                                        if (childy.ParentMenuID == childx.MenuID)
+                                        //entra en un ciclo donde valida el menu padre de nu
+                                        {
+                                            <li>
+                                                <a href="@childy.MenuURL" class="nav-link ">
+                                                    <span class="title">@childy.DisplayName</span>
+                                                </a>
+                                            </li>
+                                        }
+
+                                    }
+                                </ul>
+                            </li>
+                        }
+                        else
+                        {
+                            if (childx.ParentMenuID == menu.MenuID)
+                            {
+
+                                <li class="nav-item">
+                                    <a href="@childx.MenuURL" class=" nav-link">
+                                        <span class="title">@childx.DisplayName</span>
+                                    </a>
+                                </li>
+                            }
+                        }
+                    }
+                </ul>
+                @*}
+                }*@
+
+            </li>
+        }
+    }

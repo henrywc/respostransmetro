@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewBag.Title = "Pilotos Dirección";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Listado de Dirección Pilotos</h2>
+
+<p>
+    @Html.ActionLink("Actualizar dirección completa a Piloto existente", "Create", null, new { @class = "btn btn-primary" })
+</p>
+<table class="table">
+    <tr>
+        <th class="hidden">
+            idpilotos_direccion
+        </th>
+        <th>
+            Dirección
+        </th>
+        <th>
+            Zona
+        </th>
+        <th>
+            Colonia
+        </th>
+        <th>
+            Municipio
+        </th>
+        <th>
+            Departamento
+        </th>
+        <th>
+            Nombre Piloto
+        </th>
+        <th>Opciones</th>
+    </tr>
+
+    @foreach (var lista in ViewBag.PilotosDireccion)
+    {
+<tr>
+    <td class="hidden">
+        @lista.idpilotos_direccion
+    </td>
+    <td>
+        @lista.direccion_piloto
+    </td>
+    <td>
+        @lista.zona_piloto
+    </td>
+    <td>
+        @lista.colonia_piloto
+    </td>
+    <td>
+        @lista.municipio_piloto
+    </td>
+    <td>
+        @lista.departamento_piloto
+    </td>
+    <td>
+        @lista.nombre_piloto
+    </td>
+    <td>
+        @Html.ActionLink("Detalles", "Details", new { id = lista.idpilotos_direccion, }, new { @class = "btn btn-default" }) |
+        @Html.ActionLink("Editar", "Edit", new { id = lista.idpilotos_direccion, }, new { @class = "btn btn-warning" }) |
+        @Html.ActionLink("Eliminar", "Delete", new { id = lista.idpilotos_direccion, }, new { @class = "btn btn-danger" })
+    </td>
+</tr>
+    }
+
+</table>
+
+

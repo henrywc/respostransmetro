@@ -1,0 +1,784 @@
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\NLog.config
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\BlackSys.dll.config
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\BlackSys.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\BlackSys.pdb
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\csc.exe
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\csc.exe.config
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\csc.rsp
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\csi.exe
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\csi.exe.config
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\csi.rsp
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\vbc.exe
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\vbc.exe.config
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\vbc.rsp
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\VBCSCompiler.exe
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.Win32.Primitives.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\netstandard.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.AppContext.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Collections.Concurrent.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Collections.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Collections.NonGeneric.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Collections.Specialized.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.ComponentModel.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.ComponentModel.EventBasedAsync.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.ComponentModel.Primitives.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.ComponentModel.TypeConverter.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Console.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Data.Common.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Diagnostics.Contracts.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Diagnostics.Debug.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Diagnostics.FileVersionInfo.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Diagnostics.Process.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Diagnostics.StackTrace.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Diagnostics.TextWriterTraceListener.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Diagnostics.Tools.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Diagnostics.TraceSource.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Diagnostics.Tracing.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Drawing.Primitives.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Dynamic.Runtime.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Globalization.Calendars.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Globalization.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Globalization.Extensions.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.IO.Compression.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.IO.Compression.ZipFile.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.IO.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.IO.FileSystem.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.IO.FileSystem.DriveInfo.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.IO.FileSystem.Primitives.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.IO.FileSystem.Watcher.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.IO.IsolatedStorage.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.IO.MemoryMappedFiles.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.IO.Pipes.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.IO.UnmanagedMemoryStream.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Linq.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Linq.Expressions.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Linq.Parallel.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Linq.Queryable.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Net.Http.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Net.NameResolution.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Net.NetworkInformation.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Net.Ping.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Net.Primitives.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Net.Requests.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Net.Security.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Net.Sockets.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Net.WebHeaderCollection.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Net.WebSockets.Client.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Net.WebSockets.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.ObjectModel.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Reflection.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Reflection.Extensions.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Reflection.Primitives.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Resources.Reader.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Resources.ResourceManager.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Resources.Writer.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Runtime.CompilerServices.VisualC.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Runtime.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Runtime.Extensions.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Runtime.Handles.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Runtime.InteropServices.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Runtime.Numerics.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Runtime.Serialization.Formatters.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Runtime.Serialization.Json.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Runtime.Serialization.Primitives.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Runtime.Serialization.Xml.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Security.Claims.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Security.Cryptography.Algorithms.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Security.Cryptography.Csp.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Security.Cryptography.Encoding.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Security.Cryptography.Primitives.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Security.Cryptography.X509Certificates.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Security.Principal.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Security.SecureString.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Text.Encoding.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Text.Encoding.Extensions.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Text.RegularExpressions.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Threading.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Threading.Overlapped.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Threading.Tasks.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Threading.Tasks.Parallel.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Threading.Thread.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Threading.ThreadPool.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Threading.Timer.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.ValueTuple.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Xml.ReaderWriter.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Xml.XDocument.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Xml.XmlDocument.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Xml.XmlSerializer.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Xml.XPath.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Xml.XPath.XDocument.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Antlr3.Runtime.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\EntityFramework.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\EntityFramework.SqlServer.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.Owin.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.Owin.Security.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Newtonsoft.Json.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\NLog.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Oracle.ManagedDataAccess.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Owin.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Rotativa.AspNetCore.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Rotativa.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Web.Helpers.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Web.Mvc.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Web.Optimization.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Web.Razor.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Web.WebPages.Deployment.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Web.WebPages.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Web.WebPages.Razor.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\WebGrease.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Antlr3.Runtime.pdb
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\EntityFramework.xml
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\EntityFramework.SqlServer.xml
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.Owin.xml
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.Owin.Security.xml
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\Newtonsoft.Json.xml
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\NLog.xml
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Web.Helpers.xml
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Web.Mvc.xml
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Web.Optimization.xml
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Web.Razor.xml
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Web.WebPages.xml
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Web.WebPages.Deployment.xml
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\System.Web.WebPages.Razor.xml
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\es\System.Web.Helpers.resources.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\es\System.Web.Mvc.resources.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\es\System.Web.Razor.resources.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\es\System.Web.WebPages.resources.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\obj\Debug\Transmetro.csproj.CoreCompileInputs.cache
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\obj\Debug\Transmetro.csproj.CopyComplete
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\obj\Debug\BlackSys.dll
+C:\Users\KevinG\source\Workspaces\ERPEFEJOTA\BlackSys\obj\Debug\BlackSys.pdb
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\NLog.config
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\BlackSys.dll.config
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\BlackSys.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\BlackSys.pdb
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\csc.exe
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\csc.exe.config
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\csc.rsp
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\csi.exe
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\csi.exe.config
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\csi.rsp
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\vbc.exe
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\vbc.exe.config
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\vbc.rsp
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\VBCSCompiler.exe
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.Win32.Primitives.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\netstandard.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.AppContext.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Collections.Concurrent.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Collections.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Collections.NonGeneric.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Collections.Specialized.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.ComponentModel.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.ComponentModel.EventBasedAsync.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.ComponentModel.Primitives.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.ComponentModel.TypeConverter.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Console.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Data.Common.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Diagnostics.Contracts.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Diagnostics.Debug.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Diagnostics.FileVersionInfo.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Diagnostics.Process.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Diagnostics.StackTrace.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Diagnostics.TextWriterTraceListener.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Diagnostics.Tools.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Diagnostics.TraceSource.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Diagnostics.Tracing.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Drawing.Primitives.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Dynamic.Runtime.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Globalization.Calendars.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Globalization.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Globalization.Extensions.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.IO.Compression.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.IO.Compression.ZipFile.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.IO.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.IO.FileSystem.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.IO.FileSystem.DriveInfo.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.IO.FileSystem.Primitives.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.IO.FileSystem.Watcher.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.IO.IsolatedStorage.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.IO.MemoryMappedFiles.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.IO.Pipes.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.IO.UnmanagedMemoryStream.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Linq.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Linq.Expressions.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Linq.Parallel.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Linq.Queryable.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Net.Http.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Net.NameResolution.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Net.NetworkInformation.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Net.Ping.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Net.Primitives.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Net.Requests.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Net.Security.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Net.Sockets.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Net.WebHeaderCollection.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Net.WebSockets.Client.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Net.WebSockets.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.ObjectModel.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Reflection.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Reflection.Extensions.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Reflection.Primitives.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Resources.Reader.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Resources.ResourceManager.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Resources.Writer.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Runtime.CompilerServices.VisualC.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Runtime.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Runtime.Extensions.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Runtime.Handles.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Runtime.InteropServices.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Runtime.Numerics.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Runtime.Serialization.Formatters.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Runtime.Serialization.Json.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Runtime.Serialization.Primitives.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Runtime.Serialization.Xml.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Security.Claims.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Security.Cryptography.Algorithms.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Security.Cryptography.Csp.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Security.Cryptography.Encoding.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Security.Cryptography.Primitives.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Security.Cryptography.X509Certificates.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Security.Principal.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Security.SecureString.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Text.Encoding.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Text.Encoding.Extensions.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Text.RegularExpressions.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Threading.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Threading.Overlapped.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Threading.Tasks.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Threading.Tasks.Parallel.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Threading.Thread.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Threading.ThreadPool.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Threading.Timer.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.ValueTuple.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Xml.ReaderWriter.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Xml.XDocument.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Xml.XmlDocument.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Xml.XmlSerializer.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Xml.XPath.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Xml.XPath.XDocument.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Antlr3.Runtime.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\EntityFramework.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\EntityFramework.SqlServer.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Newtonsoft.Json.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\NLog.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Oracle.ManagedDataAccess.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Owin.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Rotativa.AspNetCore.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Rotativa.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Web.Helpers.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Web.Mvc.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Web.Optimization.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Web.Razor.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Web.WebPages.Deployment.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Web.WebPages.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Web.WebPages.Razor.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\WebGrease.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Antlr3.Runtime.pdb
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\EntityFramework.xml
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\EntityFramework.SqlServer.xml
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.xml
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.xml
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\Newtonsoft.Json.xml
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\NLog.xml
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Web.Helpers.xml
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Web.Mvc.xml
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Web.Optimization.xml
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Web.Razor.xml
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Web.WebPages.xml
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Web.WebPages.Deployment.xml
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\System.Web.WebPages.Razor.xml
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\es\System.Web.Helpers.resources.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\es\System.Web.Mvc.resources.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\es\System.Web.Razor.resources.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\es\System.Web.WebPages.resources.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\obj\Debug\Transmetro.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\obj\Debug\Transmetro.csproj.CopyComplete
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\obj\Debug\BlackSys.dll
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\obj\Debug\BlackSys.pdb
+C:\Users\User\Downloads\ERP_Transmetro\BlackSys\obj\Debug\Transmetro.csprojAssemblyReference.cache
+D:\Calespana\ERP_Transmetro\BlackSys\bin\NLog.config
+D:\Calespana\ERP_Transmetro\BlackSys\bin\BlackSys.dll.config
+D:\Calespana\ERP_Transmetro\BlackSys\bin\BlackSys.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\BlackSys.pdb
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\csc.exe
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\csc.exe.config
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\csc.rsp
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\csi.exe
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\csi.exe.config
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\csi.rsp
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\System.Collections.Immutable.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\System.Reflection.Metadata.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\vbc.exe
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\vbc.exe.config
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\vbc.rsp
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\VBCSCompiler.exe
+D:\Calespana\ERP_Transmetro\BlackSys\bin\roslyn\VBCSCompiler.exe.config
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.Win32.Primitives.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\netstandard.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.AppContext.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Collections.Concurrent.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Collections.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Collections.NonGeneric.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Collections.Specialized.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.ComponentModel.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.ComponentModel.EventBasedAsync.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.ComponentModel.Primitives.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.ComponentModel.TypeConverter.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Console.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Data.Common.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Diagnostics.Contracts.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Diagnostics.Debug.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Diagnostics.FileVersionInfo.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Diagnostics.Process.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Diagnostics.StackTrace.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Diagnostics.TextWriterTraceListener.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Diagnostics.Tools.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Diagnostics.TraceSource.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Diagnostics.Tracing.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Drawing.Primitives.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Dynamic.Runtime.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Globalization.Calendars.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Globalization.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Globalization.Extensions.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.IO.Compression.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.IO.Compression.ZipFile.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.IO.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.IO.FileSystem.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.IO.FileSystem.DriveInfo.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.IO.FileSystem.Primitives.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.IO.FileSystem.Watcher.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.IO.IsolatedStorage.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.IO.MemoryMappedFiles.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.IO.Pipes.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.IO.UnmanagedMemoryStream.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Linq.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Linq.Expressions.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Linq.Parallel.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Linq.Queryable.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Net.Http.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Net.NameResolution.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Net.NetworkInformation.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Net.Ping.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Net.Primitives.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Net.Requests.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Net.Security.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Net.Sockets.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Net.WebHeaderCollection.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Net.WebSockets.Client.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Net.WebSockets.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.ObjectModel.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Reflection.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Reflection.Extensions.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Reflection.Primitives.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Resources.Reader.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Resources.ResourceManager.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Resources.Writer.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Runtime.CompilerServices.VisualC.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Runtime.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Runtime.Extensions.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Runtime.Handles.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Runtime.InteropServices.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Runtime.Numerics.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Runtime.Serialization.Formatters.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Runtime.Serialization.Json.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Runtime.Serialization.Primitives.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Runtime.Serialization.Xml.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Security.Claims.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Security.Cryptography.Algorithms.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Security.Cryptography.Csp.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Security.Cryptography.Encoding.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Security.Cryptography.Primitives.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Security.Cryptography.X509Certificates.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Security.Principal.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Security.SecureString.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Text.Encoding.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Text.Encoding.Extensions.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Text.RegularExpressions.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Threading.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Threading.Overlapped.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Threading.Tasks.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Threading.Tasks.Parallel.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Threading.Thread.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Threading.ThreadPool.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Threading.Timer.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.ValueTuple.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Xml.ReaderWriter.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Xml.XDocument.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Xml.XmlDocument.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Xml.XmlSerializer.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Xml.XPath.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Xml.XPath.XDocument.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Antlr3.Runtime.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\EntityFramework.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\EntityFramework.SqlServer.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.Google.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.Web.Infrastructure.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Newtonsoft.Json.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\NLog.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Oracle.ManagedDataAccess.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Owin.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Rotativa.AspNetCore.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Rotativa.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Web.Helpers.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Web.Mvc.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Web.Optimization.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Web.Razor.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Web.WebPages.Deployment.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Web.WebPages.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Web.WebPages.Razor.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\WebGrease.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Antlr3.Runtime.pdb
+D:\Calespana\ERP_Transmetro\BlackSys\bin\EntityFramework.xml
+D:\Calespana\ERP_Transmetro\BlackSys\bin\EntityFramework.SqlServer.xml
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.xml
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.xml
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.Google.xml
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Calespana\ERP_Transmetro\BlackSys\bin\Newtonsoft.Json.xml
+D:\Calespana\ERP_Transmetro\BlackSys\bin\NLog.xml
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Web.Helpers.xml
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Web.Mvc.xml
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Web.Optimization.xml
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Web.Razor.xml
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Web.WebPages.xml
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Web.WebPages.Deployment.xml
+D:\Calespana\ERP_Transmetro\BlackSys\bin\System.Web.WebPages.Razor.xml
+D:\Calespana\ERP_Transmetro\BlackSys\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\es\System.Web.Helpers.resources.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\es\System.Web.Mvc.resources.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\es\System.Web.Razor.resources.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\es\System.Web.WebPages.resources.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\Calespana\ERP_Transmetro\BlackSys\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\Calespana\ERP_Transmetro\BlackSys\obj\Debug\Transmetro.csproj.CoreCompileInputs.cache
+D:\Calespana\ERP_Transmetro\BlackSys\obj\Debug\Transmetro.csproj.CopyComplete
+D:\Calespana\ERP_Transmetro\BlackSys\obj\Debug\BlackSys.dll
+D:\Calespana\ERP_Transmetro\BlackSys\obj\Debug\BlackSys.pdb
+D:\Calespana\ERP_Transmetro\BlackSys\obj\Debug\Transmetro.csprojAssemblyReference.cache
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\NLog.config
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\BlackSys.dll.config
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\BlackSys.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\BlackSys.pdb
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\csc.exe
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\csc.exe.config
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\csc.rsp
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\csi.exe
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\csi.exe.config
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\csi.rsp
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\vbc.exe
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\vbc.exe.config
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\vbc.rsp
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\VBCSCompiler.exe
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.Win32.Primitives.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\netstandard.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.AppContext.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Collections.Concurrent.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Collections.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Collections.NonGeneric.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Collections.Specialized.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.ComponentModel.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.ComponentModel.EventBasedAsync.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.ComponentModel.Primitives.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.ComponentModel.TypeConverter.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Console.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Data.Common.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Diagnostics.Contracts.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Diagnostics.Debug.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Diagnostics.Process.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Diagnostics.StackTrace.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Diagnostics.TextWriterTraceListener.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Diagnostics.Tools.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Diagnostics.TraceSource.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Diagnostics.Tracing.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Drawing.Primitives.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Dynamic.Runtime.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Globalization.Calendars.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Globalization.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Globalization.Extensions.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.IO.Compression.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.IO.Compression.ZipFile.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.IO.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.IO.FileSystem.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.IO.FileSystem.DriveInfo.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.IO.FileSystem.Primitives.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.IO.FileSystem.Watcher.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.IO.IsolatedStorage.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.IO.MemoryMappedFiles.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.IO.Pipes.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.IO.UnmanagedMemoryStream.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Linq.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Linq.Expressions.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Linq.Parallel.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Linq.Queryable.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Net.Http.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Net.NameResolution.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Net.NetworkInformation.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Net.Ping.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Net.Primitives.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Net.Requests.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Net.Security.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Net.Sockets.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Net.WebHeaderCollection.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Net.WebSockets.Client.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Net.WebSockets.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.ObjectModel.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Reflection.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Reflection.Extensions.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Reflection.Primitives.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Resources.Reader.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Resources.ResourceManager.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Resources.Writer.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Runtime.CompilerServices.VisualC.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Runtime.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Runtime.Extensions.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Runtime.Handles.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Runtime.InteropServices.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Runtime.Numerics.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Runtime.Serialization.Formatters.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Runtime.Serialization.Json.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Runtime.Serialization.Primitives.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Runtime.Serialization.Xml.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Security.Claims.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Security.Cryptography.Algorithms.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Security.Cryptography.Csp.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Security.Cryptography.Encoding.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Security.Cryptography.Primitives.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Security.Principal.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Security.SecureString.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Text.Encoding.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Text.Encoding.Extensions.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Text.RegularExpressions.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Threading.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Threading.Overlapped.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Threading.Tasks.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Threading.Tasks.Parallel.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Threading.Thread.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Threading.ThreadPool.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Threading.Timer.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.ValueTuple.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Xml.ReaderWriter.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Xml.XDocument.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Xml.XmlDocument.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Xml.XmlSerializer.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Xml.XPath.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Xml.XPath.XDocument.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Antlr3.Runtime.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\EntityFramework.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\EntityFramework.SqlServer.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Newtonsoft.Json.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\NLog.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Oracle.ManagedDataAccess.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Owin.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Rotativa.AspNetCore.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Rotativa.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Web.Helpers.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Web.Mvc.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Web.Optimization.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Web.Razor.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Web.WebPages.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Web.WebPages.Razor.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\WebGrease.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Antlr3.Runtime.pdb
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\EntityFramework.xml
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\EntityFramework.SqlServer.xml
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.xml
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.xml
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\Newtonsoft.Json.xml
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\NLog.xml
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Web.Helpers.xml
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Web.Mvc.xml
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Web.Optimization.xml
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Web.Razor.xml
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Web.WebPages.xml
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\System.Web.WebPages.Razor.xml
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\es\System.Web.Razor.resources.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\obj\Debug\Transmetro.csproj.CoreCompileInputs.cache
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\obj\Debug\Transmetro.csproj.CopyComplete
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\obj\Debug\BlackSys.dll
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\obj\Debug\BlackSys.pdb
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\obj\Debug\BlackSys.Migrations.AddMiddleName.resources
+C:\Users\Keving\OneDrive - Grupo Sega\Escritorio\KevinG\Personal\Henry\ERP_Transmetro\BlackSys\obj\Debug\Transmetro.csproj.GenerateResource.cache

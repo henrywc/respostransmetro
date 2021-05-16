@@ -1,0 +1,81 @@
+﻿@model BlackSys.Models.Modelos_transmetro.ConsultarGuardia
+
+@{
+    ViewBag.Title = "Eliminar Guardia";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Eliminar</h2>
+
+<h3>Está seguro que desea eliminarlo?</h3>
+<div>
+    <h4>Eliminar Guardia</h4>
+    <hr />
+    @foreach (var lista in ViewBag.Guardias)
+    {
+
+        <dl class="dl-horizontal">
+            <dt>
+                Guardia:
+            </dt>
+
+            <dd>
+                @lista.nombre_guardia
+            </dd>
+
+            <dt>
+                Dirección:
+            </dt>
+
+            <dd>
+                @lista.direccion_guardia
+            </dd>
+            <dt>
+                Correo:
+            </dt>
+
+            <dd>
+                @lista.correo_guardia
+            </dd>
+            <dt>
+                Edad:
+            </dt>
+
+            <dd>
+                @lista.edad_guardia
+            </dd>
+            <dt>
+                Telefono:
+            </dt>
+
+            <dd>
+                @lista.telefono_guardia
+            </dd>
+            <dt>
+                Celular:
+            </dt>
+
+            <dd>
+                @lista.celular_guardia
+            </dd>
+            <dt>
+                Acceso:
+            </dt>
+
+            <dd>
+                @lista.nombre_acceso
+            </dd>
+
+        </dl>
+
+    }
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+            <a href="/Guardia/Index" class="btn btn-primary">Regresar al Listado</a>
+        </div>
+    }
+</div>

@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "Pilotos Educación";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Listado de Educación Pilotos</h2>
+
+<p>
+    @Html.ActionLink("Crear nuevo Curso a Piloto existente", "Create", null, new { @class = "btn btn-primary" })
+</p>
+<table class="table">
+    <tr>
+        <th class="hidden">
+            idpilotos_educacion
+        </th>
+        <th>
+            Nombre
+        </th>
+        <th>
+            Último nivel cursado
+        </th>
+        <th>
+            Año último nivel cursado
+        </th>
+        <th>
+            Centro Educativo
+        </th>
+        <th>Opciones</th>
+    </tr>
+
+    @foreach (var lista in ViewBag.PilotosEducacion)
+    {
+<tr>
+    <td class="hidden">
+        @lista.idpilotos_educacion
+    </td>
+    <td>
+        @lista.nombre_piloto
+    </td>
+    <td>
+        @lista.nivelcursado
+    </td>
+    <td>
+        @lista.fechanivelcursado
+    </td>
+    <td>
+        @lista.centroeducativo
+    </td>
+    <td>
+        @Html.ActionLink("Detalles", "Details", new { id = lista.idpilotos_educacion, }, new { @class = "btn btn-default" }) |
+        @Html.ActionLink("Editar", "Edit", new { id = lista.idpilotos_educacion, }, new { @class = "btn btn-warning" }) |
+        @Html.ActionLink("Eliminar", "Delete", new { id = lista.idpilotos_educacion, }, new { @class = "btn btn-danger" })
+    </td>
+</tr>
+    }
+
+</table>
+

@@ -1,0 +1,33 @@
+﻿@model BlackSys.Models.Modelos_transmetro.ConsultarParqueo
+
+@{
+    ViewBag.Title = "Detalles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Detalle de Parqueo</h4>
+    <hr />
+    @foreach (var lista in ViewBag.Parqueos)
+    {
+        <dl class="dl-horizontal">
+
+            <div class="card-body text-center">
+
+                <h4>Parqueo: @lista.nombre_parqueo</h4>
+                <h4>Estación: @lista.nombre_estacion</h4>
+                <p>
+                    @Html.ActionLink("Editar", "Edit", new { id = lista.idparqueo, }, new { @class = "btn btn-warning" }) |
+                    <a href="/Parqueo/Index" class="btn btn-primary">Regresar al Listado</a>
+                </p>
+
+
+            </div>
+
+
+        </dl>
+
+    }
+</div>

@@ -1,0 +1,204 @@
+﻿
+@{
+    ViewBag.Title = "Gestión de Estaciones";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Gestión de Estaciones</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <div class="form-group">
+            <label class="control-label col-md-2">Estación</label>
+            <div class="col-md-10">
+                @Html.DropDownList("dropdown_estaciones", null, "", new { @id = "cmb_estaciones", @onChange = "cmb_estacioneschange(this.value)", @title = "Seleccione una Opción", @class = "form-control font selectpicker ", data_container = "body", data_live_search = "true", data_hide_disabled = "true" })
+            </div>
+        </div>
+        <input type="text" name="idbus" id="idbus" class="hidden" value="" />
+        <div class="form-group">
+            <label class="control-label col-md-2">Bus</label>
+
+            <div class="col-md-10">
+                @Html.DropDownList("dropdownbus", null, "", new { @id = "cmb_bus", @onChange = "cmb_changebus(this.value)", @title = "Seleccione una Opción", @class = "form-control font selectpicker ", data_container = "body", data_live_search = "true", data_hide_disabled = "true" })
+            </div>
+        </div>
+
+    </div>
+
+    <p id="capestacion"></p>
+    <p id="Mensaje"></p>
+    <p id="Mensaje2"></p>
+    <p id="Mensaje3"></p>
+    <p id="Mensaje4"></p>
+
+}
+
+<div>
+    <div class="form-group">
+
+        <div class="col-md-10">
+            <input type="button" name="btncontar" id="btncontar" class="btn btn-primary" onclick="simular()" value="Contar Personas Estacion" />
+        </div>
+        <div class="col-md-10">
+            <input type="button" name="btncontar" id="btncontar" class="btn btn-danger" onclick="limpiar()" value="Reiniciar gestión de estación" />
+        </div>
+    </div>
+    @Html.ActionLink("Regresar a Listado", "Index", null, new { @class = "btn btn-primary" })
+
+</div>
+
+
+<script type="text/javascript">
+    var personas_estacion = 0;
+    var capacidadbus = 100;
+
+    function limpiar() { window.location.href = window.location.href }
+
+    function cmb_changebus(id) {
+        //    if (personas_estacion === 0 || personas_estacion < 50) {
+        document.getElementById("cmb_bus").disabled = true;
+        document.getElementById("capestacion").innerHTML = "";
+        var countDownDate = new Date();
+        countDownDate.setMinutes(countDownDate.getMinutes() + 1);
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("Mensaje").innerHTML = "Los pasajeros están abordando. Tiempo de espera: " + minutes + "m " + seconds + "s ";
+            document.getElementById("Mensaje4").innerHTML = "";
+            // If the count down is over, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                var datos = new Array();
+                var dato = {};
+
+                var idestacion = document.getElementById("cmb_estaciones");
+                ides = idestacion.options[idestacion.selectedIndex].value;
+
+                var idbus = document.getElementById("cmb_bus");
+                idb = idbus.options[idbus.selectedIndex].value;
+
+                dato.idbus = idb;
+                dato.idestacion = ides;
+
+                datos.push(dato);
+
+
+                $.ajax({
+                    type: "POST",
+                    url: "/Simulacion/ValidarCapacidad/",
+                    data: JSON.stringify(datos),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (datos) {
+
+                        if (datos.PorcentajeSubidosBus <= 25) {
+
+                            var totalbus = (datos.pasajerosenbus - datos.pasajerosbajan) + datos.pasajerosabordan;
+                            document.getElementById("Mensaje").innerHTML = "El bus viene con "
+                                + datos.pasajerosenbus + " pasajeros y descienden en la Estación " + datos.pasajerosbajan + " pasajeros.";
+                            document.getElementById("Mensaje2").innerHTML = "La capacidad del bus es de " + datos.capacidadbus + " pasajeros y abordan " + datos.pasajerosabordan + " pasajeros.";
+                            document.getElementById("Mensaje3").innerHTML = "El total de pasajeros para este viaje es de " + totalbus + ". El bus debe esperar 5 min.";
+
+
+                            var countDownDate2 = new Date();
+                            countDownDate2.setMinutes(countDownDate2.getMinutes() + 5);
+                            // Update the count down every 1 second
+                            var y = setInterval(function () {
+
+                                // Get today's date and time
+                                var now2 = new Date().getTime();
+
+                                // Find the distance between now and the count down date
+                                var dist = countDownDate2 - now2;
+
+                                // Time calculations for days, hours, minutes and seconds
+                                var minutes2 = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
+                                var seconds2 = Math.floor((dist % (1000 * 60)) / 1000);
+
+                                // Output the result in an element with id="demo"
+                                document.getElementById("Mensaje4").innerHTML = minutes2 + "m " + seconds2 + "s ";
+
+                                // If the count down is over, write some text
+                                if (dist < 0) {
+                                    clearInterval(x);
+                                    document.getElementById("Mensaje4").innerHTML = "Espera finalizada, el bus debe partir ";
+
+                                    document.getElementById("cmb_bus").disabled = false;
+                                }
+                            }, 1000);
+
+                        }
+                        else {
+                            var totalbus = (datos.pasajerosenbus - datos.pasajerosbajan) + datos.pasajerosabordan;
+                            document.getElementById("Mensaje").innerHTML = "El bus viene con "
+                                + datos.pasajerosenbus + " pasajeros y descienden en la Estación " + datos.pasajerosbajan + " pasajeros.";
+                            document.getElementById("Mensaje2").innerHTML = "La capacidad del bus es de " + datos.capacidadbus + " pasajeros y abordan " + datos.pasajerosabordan + " pasajeros.";
+                            document.getElementById("Mensaje3").innerHTML = "El total de pasajeros para este viaje es de " + totalbus + ". El bus debe partir a la siguiente estación.";
+                            document.getElementById("cmb_bus").disabled = false;
+                        }
+                    }
+                });
+            }
+        }, 1000);
+        /*}*/
+        //else {
+        //    if (personas_estacion > 200) {
+        //        document.getElementById("capestacion").innerHTML = "";
+        //        document.getElementById("Mensaje").innerHTML = "El bus tiene un capacidad de " + capacidadbus + " y el numero de pasajeros 200 es  buen viaje";
+        //        document.getElementById("cmb_bus").disabled = false;
+        //        personas_estacion = 0
+        //    }
+        //    else {
+        //        document.getElementById("capestacion").innerHTML = "";
+        //        document.getElementById("Mensaje").innerHTML = "El bus tiene un capacidad de " + capacidadbus + " y el numero de pasajeros " + personas_estacion + " es  buen viaje";
+        //        document.getElementById("cmb_bus").disabled = false;
+        //        personas_estacion = 0
+        //    }
+
+        //}
+    }
+    function simular() {
+        document.getElementById("cmb_bus").disabled = true;
+        var idestacion = document.getElementById("cmb_estaciones");
+        id = idestacion.options[idestacion.selectedIndex].value;
+        $.ajax({
+            type: "GET",
+            url: "/Simulacion/ContarPersonas/" + id,
+            //data: JSON.stringify(datos),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (datos) {
+                //alert(datos.PorcentajePesonasEstacion)
+                if (datos.PorcentajePesonasEstacion >= 50) {
+
+                    document.getElementById("capestacion").innerHTML = "La Estación tiene una Capacidad de " + datos.capestacion + " pasajeros y en la Estación se encuentran " + datos.personaestacion + " personas, se solicitó un bus ";
+                    document.getElementById("cmb_bus").disabled = false;
+                }
+                else {
+                    document.getElementById("capestacion").innerHTML = "La estación tiene una Capacidad de " + datos.capestacion + " pasajeros y en la Estación se encuentran " + datos.personaestacion + " personas, deben esperar un bus ";
+                    document.getElementById("cmb_bus").disabled = false;
+                    // personas_estacion = 0;
+                }
+                //personas_estacion = datos.estacion;
+            }
+        });
+    }
+
+</script>
+
+

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="oracleconnect" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="oracleconnectContainer" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="ACTUALIZA_COSTOSBODEGA" />
+    <FunctionImport Name="ACTUALIZA_DETALLE_BODEGA">
+      <Parameter Name="P_PROYECTO" Mode="In" Type="Decimal" />
+      <Parameter Name="P_BODEGA" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="ACTUALIZA_ORDEN_WEB">
+      <Parameter Name="PR_PROYECTO" Mode="In" Type="Decimal" />
+      <Parameter Name="PR_ORDEN" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="ACTUALIZA_PEDIDO_WEB">
+      <Parameter Name="PR_PROYECTO" Mode="In" Type="Decimal" />
+      <Parameter Name="PR_ORDEN" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="ACTUALIZA_PRE_REQUISICION">
+      <Parameter Name="PR_PROYECTO" Mode="In" Type="Decimal" />
+      <Parameter Name="PR_BODEGA" Mode="In" Type="Decimal" />
+      <Parameter Name="PR_MODELO" Mode="In" Type="Decimal" />
+      <Parameter Name="PR_OBRA" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="ACTUALIZA_TAREA" />
+    <FunctionImport Name="AGREGA_ADICIONAL_EMPLEADO" />
+    <FunctionImport Name="AUTORIZA_BITACORA_DETALLE" />
+    <FunctionImport Name="AUTORIZA_PRECIO_MO" />
+    <FunctionImport Name="AUTORIZA_PRECIOS_BITACORA" />
+    <FunctionImport Name="AUT_PRECIOS_BITACORA_ORDEN" />
+    <FunctionImport Name="BORRA_DET_PREREQ" />
+    <FunctionImport Name="CALCULA_ASIENTO_CUENTA" />
+    <FunctionImport Name="CALCULA_SALARIO_CUADRILLA">
+      <Parameter Name="P_CUADRILLA" Mode="In" Type="Decimal" />
+      <Parameter Name="P_TRABAJO" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="CALCULA_SALARIO_CUADRILLA_KJGH">
+      <Parameter Name="P_CUADRILLA" Mode="In" Type="Decimal" />
+      <Parameter Name="P_TRABAJO" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="COPIA_FORMULAS">
+      <Parameter Name="PFORMULA_ANTERIOR" Mode="In" Type="Decimal" />
+      <Parameter Name="PFORMULA_NUEVA" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="COPIAS_FABRICA">
+      <Parameter Name="P_PROYECTO" Mode="In" Type="Decimal" />
+      <Parameter Name="P_BODEGA" Mode="In" Type="Decimal" />
+      <Parameter Name="P_LOTE" Mode="In" Type="Decimal" />
+      <Parameter Name="P_MODELO" Mode="In" Type="Decimal" />
+      <Parameter Name="P_ACTIVIDAD" Mode="In" Type="Decimal" />
+      <Parameter Name="P_TAREA" Mode="In" Type="Decimal" />
+      <Parameter Name="P_COPIAS" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="DESMARCA_METAS" />
+    <FunctionImport Name="ENVIA_CORREO">
+      <Parameter Name="P_DIR_DESTINO" Mode="In" Type="String" />
+      <Parameter Name="P_ASUNTO" Mode="In" Type="String" />
+      <Parameter Name="P_MENSAJE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GENERA_COMMIT" />
+    <FunctionImport Name="GENERA_DETALLE_LOTE_TAREA" />
+    <FunctionImport Name="GENERA_DEVOLUCION">
+      <Parameter Name="PSOLICITUD" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="GENERA_PEDIDO">
+      <Parameter Name="P_PRE_PEDIDO" Mode="In" Type="Decimal" />
+      <Parameter Name="P_PROYECTO" Mode="In" Type="Decimal" />
+      <Parameter Name="P_IDEXPLOSION" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="GENERA_PLAN_CONSUMO">
+      <Parameter Name="P_PROYECTO" Mode="In" Type="Decimal" />
+      <Parameter Name="P_MODELO" Mode="In" Type="Decimal" />
+      <Parameter Name="P_ACTIVIDAD" Mode="In" Type="Decimal" />
+      <Parameter Name="P_TAREA" Mode="In" Type="Decimal" />
+      <Parameter Name="P_BODEGA" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="GENERA_PLANILLA">
+      <Parameter Name="PSOLICITUD" Mode="In" Type="Decimal" />
+      <Parameter Name="PCUADRILLA" Mode="In" Type="Decimal" />
+      <Parameter Name="PESTADO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GENERA_PRE_PEDIDO">
+      <Parameter Name="P_IDEXPLOSION" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="GENERA_PRE_REQUISICION">
+      <Parameter Name="PR_PROYECTO" Mode="In" Type="Decimal" />
+      <Parameter Name="PR_BODEGA" Mode="In" Type="Decimal" />
+      <Parameter Name="PR_MODELO" Mode="In" Type="Decimal" />
+      <Parameter Name="PR_OBRA" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="GENERAR_ADICIONAL">
+      <Parameter Name="P_COD_PERSONA" Mode="In" Type="Decimal" />
+      <Parameter Name="P_COD_PLANILLA" Mode="In" Type="Decimal" />
+      <Parameter Name="PTIPO_PLANILLA" Mode="In" Type="Decimal" />
+      <Parameter Name="P_COD_COMPANIA" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="GENERA_SALIDA">
+      <Parameter Name="PSOLICITUD" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="GENERA_SALIDA_MO">
+      <Parameter Name="PSOLICITUD" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="GENERA_SOBREGIROS">
+      <Parameter Name="PSOLICITUD" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="GEN_PRE_REQUISICION">
+      <Parameter Name="PR_PROYECTO" Mode="In" Type="Decimal" />
+      <Parameter Name="PR_BODEGA" Mode="In" Type="Decimal" />
+      <Parameter Name="PR_MODELO" Mode="In" Type="Decimal" />
+      <Parameter Name="PR_OBRA" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="INGRESA_SCRIPT">
+      <Parameter Name="PVERSION" Mode="In" Type="Decimal" />
+      <Parameter Name="PDESCRIPCION" Mode="In" Type="String" />
+      <Parameter Name="PUSUARIO" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

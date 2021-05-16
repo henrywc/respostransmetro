@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewBag.Title = "Guardias";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Listado de Guardias</h2>
+
+<p>
+    @Html.ActionLink("Crear nuevo guardia", "Create", null, new { @class = "btn btn-primary" })
+</p>
+<table class="table">
+    <tr>
+        <th class="hidden">
+            idguardia
+        </th>
+        <th>
+            Nombre
+        </th>
+        <th>
+            Dirección
+        </th>
+        <th>
+            Correo
+        </th>
+        <th>
+            Edad
+        </th>
+        <th>
+            Teléfono
+        </th>
+        <th>
+            Celular
+        </th>
+        <th>
+            Acceso asignado
+        </th>
+        <th>Opciones</th>
+    </tr>
+
+    @foreach (var lista in ViewBag.Guardias)
+    {
+<tr>
+    <td class="hidden">
+        @lista.idguardia
+    </td>
+    <td>
+        @lista.nombre_guardia
+    </td>
+    <td>
+        @lista.direccion_guardia
+    </td>
+    <td>
+        @lista.correo_guardia
+    </td>
+    <td>
+        @lista.edad_guardia
+    </td>
+    <td>
+        @lista.telefono_guardia
+    </td>
+    <td>
+        @lista.celular_guardia
+    </td>
+    <td>
+        @lista.nombre_acceso
+    </td>
+    <td>
+        @Html.ActionLink("Detalles", "Details", new { id = lista.idguardia, }, new { @class = "btn btn-default" }) |
+        @Html.ActionLink("Editar", "Edit", new { id = lista.idguardia, }, new { @class = "btn btn-warning" }) |
+        @Html.ActionLink("Eliminar", "Delete", new { id = lista.idguardia, }, new { @class = "btn btn-danger" })
+    </td>
+</tr>
+    }
+
+</table>

@@ -1,0 +1,111 @@
+﻿
+@{
+    ViewBag.Title = "Editar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <link href="~/Content/bootstrap-select.css" rel="stylesheet" />
+</head>
+
+
+<h2>Editar Pilotos Dirección</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4>Pilotos Dirección</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <input type="text" id="txt_idpilotos_direccion" name="txt_idpilotos_direccion" value="@ViewBag.idpilotos_direccion" class="hidden" />
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Dirección</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" id="txt_direccion_piloto" name="txt_direccion_piloto" value="@ViewBag.direccion_piloto" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Zona</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" id="txt_zona_piloto" name="txt_zona_piloto" value="@ViewBag.zona_piloto" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Colonia</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" id="txt_colonia_piloto" name="txt_colonia_piloto" value="@ViewBag.colonia_piloto" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Municipio</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" id="txt_municipio_piloto" name="txt_municipio_piloto" value="@ViewBag.municipio_piloto" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Departamento</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" id="txt_departamento_piloto" name="txt_departamento_piloto" value="@ViewBag.departamento_piloto" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Piloto</label>
+        <div class="col-md-10">
+            @Html.DropDownList("dropdown_pilotos", null, "", new { @id = "cmb_pilotos", @onChange = "cmb_pilotoschange(this.value)", @title = "Seleccione una Opción", @class = "form-control font selectpicker ", data_container = "body", data_live_search = "true", data_hide_disabled = "true" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Guardar" class="btn btn-primary" id="btn-editar" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    <a href="/PilotoDireccion/Index" class="btn btn-primary">Regresar al Listado</a>
+</div>
+
+<script src="~/Content/bootstrap-select.js"></script>
+
+<script>
+    $("body").on("click", "#btn-editar", function () {
+        var piloid = document.getElementById("cmb_pilotos");
+        pid = piloid.options[piloid.selectedIndex].value;
+        var direccion_piloto = document.getElementById("txt_direccion_piloto").value;
+        var zona_piloto = document.getElementById("txt_zona_piloto").value;
+        var colonia_piloto = document.getElementById("txt_colonia_piloto").value;
+        var municipio_piloto = document.getElementById("txt_municipio_piloto").value;
+        var departamento_piloto = document.getElementById("txt_departamento_piloto").value;
+        var idpilotos_direccion = document.getElementById("txt_idpilotos_direccion").value;
+        var datos = new Array();
+        var dato = {};
+        dato.direccion_piloto = direccion_piloto;
+        dato.zona_piloto = zona_piloto;
+        dato.colonia_piloto = colonia_piloto;
+        dato.municipio_piloto = municipio_piloto;
+        dato.departamento_piloto = departamento_piloto;
+        dato.idpiloto = pid;
+        dato.idpilotos_direccion = idpilotos_direccion;
+        datos.push(dato);
+        $.ajax({
+            type: "POST",
+            url: "/PilotoDireccion/Edit",
+            data: JSON.stringify(datos),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (r) {
+            }
+        });
+    });
+</script>
+

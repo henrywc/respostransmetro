@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+  <Alias Key="Model" Value="oracleconnect" />
+  <Alias Key="Target" Value="oracleconnect.Store" />
+  <EntityContainerMapping CdmEntityContainer="oracleconnectContainer" StorageEntityContainer="oracleconnectTargetContainer">
+    <FunctionImportMapping FunctionImportName="ACTUALIZA_COSTOSBODEGA" FunctionName="OracleEntitiesModel.Store.ACTUALIZA_COSTOSBODEGA" />
+    <FunctionImportMapping FunctionImportName="ACTUALIZA_DETALLE_BODEGA" FunctionName="OracleEntitiesModel.Store.ACTUALIZA_DETALLE_BODEGA" />
+    <FunctionImportMapping FunctionImportName="ACTUALIZA_ORDEN_WEB" FunctionName="OracleEntitiesModel.Store.ACTUALIZA_ORDEN_WEB" />
+    <FunctionImportMapping FunctionImportName="ACTUALIZA_PEDIDO_WEB" FunctionName="OracleEntitiesModel.Store.ACTUALIZA_PEDIDO_WEB" />
+    <FunctionImportMapping FunctionImportName="ACTUALIZA_PRE_REQUISICION" FunctionName="OracleEntitiesModel.Store.ACTUALIZA_PRE_REQUISICION" />
+    <FunctionImportMapping FunctionImportName="ACTUALIZA_TAREA" FunctionName="OracleEntitiesModel.Store.ACTUALIZA_TAREA" />
+    <FunctionImportMapping FunctionImportName="AGREGA_ADICIONAL_EMPLEADO" FunctionName="OracleEntitiesModel.Store.AGREGA_ADICIONAL_EMPLEADO" />
+    <FunctionImportMapping FunctionImportName="AUTORIZA_BITACORA_DETALLE" FunctionName="OracleEntitiesModel.Store.AUTORIZA_BITACORA_DETALLE" />
+    <FunctionImportMapping FunctionImportName="AUTORIZA_PRECIO_MO" FunctionName="OracleEntitiesModel.Store.AUTORIZA_PRECIO_MO" />
+    <FunctionImportMapping FunctionImportName="AUTORIZA_PRECIOS_BITACORA" FunctionName="OracleEntitiesModel.Store.AUTORIZA_PRECIOS_BITACORA" />
+    <FunctionImportMapping FunctionImportName="AUT_PRECIOS_BITACORA_ORDEN" FunctionName="OracleEntitiesModel.Store.AUT_PRECIOS_BITACORA_ORDEN" />
+    <FunctionImportMapping FunctionImportName="BORRA_DET_PREREQ" FunctionName="OracleEntitiesModel.Store.BORRA_DET_PREREQ" />
+    <FunctionImportMapping FunctionImportName="CALCULA_ASIENTO_CUENTA" FunctionName="OracleEntitiesModel.Store.CALCULA_ASIENTO_CUENTA" />
+    <FunctionImportMapping FunctionImportName="CALCULA_SALARIO_CUADRILLA" FunctionName="OracleEntitiesModel.Store.CALCULA_SALARIO_CUADRILLA" />
+    <FunctionImportMapping FunctionImportName="CALCULA_SALARIO_CUADRILLA_KJGH" FunctionName="OracleEntitiesModel.Store.CALCULA_SALARIO_CUADRILLA_KJGH" />
+    <FunctionImportMapping FunctionImportName="COPIA_FORMULAS" FunctionName="OracleEntitiesModel.Store.COPIA_FORMULAS" />
+    <FunctionImportMapping FunctionImportName="COPIAS_FABRICA" FunctionName="OracleEntitiesModel.Store.COPIAS_FABRICA" />
+    <FunctionImportMapping FunctionImportName="DESMARCA_METAS" FunctionName="OracleEntitiesModel.Store.DESMARCA_METAS" />
+    <FunctionImportMapping FunctionImportName="ENVIA_CORREO" FunctionName="OracleEntitiesModel.Store.ENVIA_CORREO" />
+    <FunctionImportMapping FunctionImportName="GENERA_COMMIT" FunctionName="OracleEntitiesModel.Store.GENERA_COMMIT" />
+    <FunctionImportMapping FunctionImportName="GENERA_DETALLE_LOTE_TAREA" FunctionName="OracleEntitiesModel.Store.GENERA_DETALLE_LOTE_TAREA" />
+    <FunctionImportMapping FunctionImportName="GENERA_DEVOLUCION" FunctionName="OracleEntitiesModel.Store.GENERA_DEVOLUCION" />
+    <FunctionImportMapping FunctionImportName="GENERA_PEDIDO" FunctionName="OracleEntitiesModel.Store.GENERA_PEDIDO" />
+    <FunctionImportMapping FunctionImportName="GENERA_PLAN_CONSUMO" FunctionName="OracleEntitiesModel.Store.GENERA_PLAN_CONSUMO" />
+    <FunctionImportMapping FunctionImportName="GENERA_PLANILLA" FunctionName="OracleEntitiesModel.Store.GENERA_PLANILLA" />
+    <FunctionImportMapping FunctionImportName="GENERA_PRE_PEDIDO" FunctionName="OracleEntitiesModel.Store.GENERA_PRE_PEDIDO" />
+    <FunctionImportMapping FunctionImportName="GENERA_PRE_REQUISICION" FunctionName="OracleEntitiesModel.Store.GENERA_PRE_REQUISICION" />
+    <FunctionImportMapping FunctionImportName="GENERAR_ADICIONAL" FunctionName="OracleEntitiesModel.Store.GENERAR_ADICIONAL" />
+    <FunctionImportMapping FunctionImportName="GENERA_SALIDA" FunctionName="OracleEntitiesModel.Store.GENERA_SALIDA" />
+    <FunctionImportMapping FunctionImportName="GENERA_SALIDA_MO" FunctionName="OracleEntitiesModel.Store.GENERA_SALIDA_MO" />
+    <FunctionImportMapping FunctionImportName="GENERA_SOBREGIROS" FunctionName="OracleEntitiesModel.Store.GENERA_SOBREGIROS" />
+    <FunctionImportMapping FunctionImportName="GEN_PRE_REQUISICION" FunctionName="OracleEntitiesModel.Store.GEN_PRE_REQUISICION" />
+    <FunctionImportMapping FunctionImportName="INGRESA_SCRIPT" FunctionName="OracleEntitiesModel.Store.INGRESA_SCRIPT" />
+  </EntityContainerMapping>
+</Mapping>

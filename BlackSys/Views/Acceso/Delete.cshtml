@@ -1,0 +1,46 @@
+﻿@model BlackSys.Models.ConsultarAcceso
+
+@{
+    ViewBag.Title = "Eliminar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Eliminar</h2>
+
+<h3>Está seguro que desea eliminarlo?</h3>
+<div>
+    <h4>Consultar Acceso</h4>
+    <hr />
+    @foreach (var lista in ViewBag.Accesos)
+    {
+
+        <dl class="dl-horizontal">
+            <dt>
+                Acceso:
+            </dt>
+
+            <dd>
+                @lista.nombre_acceso
+            </dd>
+
+            <dt>
+                Estación:
+            </dt>
+
+            <dd>
+                @lista.nombre_estacion
+            </dd>
+
+        </dl>
+
+    }
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+    <div class="form-actions no-color">
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a href="/Acceso/Index" class="btn btn-primary">Regresar al Listado</a>
+    </div>
+    }
+</div>

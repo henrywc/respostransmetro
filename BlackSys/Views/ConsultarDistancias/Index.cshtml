@@ -1,0 +1,52 @@
+﻿@model IEnumerable<BlackSys.Models.Modelos_transmetro.ConsultarDistancia>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.estacion_origen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estacion_destino)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.distancia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre_linea)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.estacion_origen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estacion_destino)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.distancia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombre_linea)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.iddistancia }) |
+            @Html.ActionLink("Details", "Details", new { id=item.iddistancia }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.iddistancia })
+        </td>
+    </tr>
+}
+
+</table>

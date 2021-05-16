@@ -1,0 +1,67 @@
+﻿@model BlackSys.Models.PilotoModel
+
+@{
+    ViewBag.Title = "Detalles Piloto";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Detalles de Piloto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre_piloto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre_piloto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.direccion_piloto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.direccion_piloto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.correo_piloto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.correo_piloto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.edad_piloto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.edad_piloto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telefono_piloto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telefono_piloto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.celular_piloto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.celular_piloto)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.idpiloto, }, new { @class = "btn btn-warning" }) |
+    @Html.ActionLink("Regresar a Listado", "Index", null, new { @class = "btn btn-primary" })
+</p>

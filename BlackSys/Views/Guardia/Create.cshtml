@@ -1,0 +1,117 @@
+﻿
+@{
+    ViewBag.Title = "Crear Guardia";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <link href="~/Content/bootstrap-select.css" rel="stylesheet" />
+</head>
+
+<h2>Crear Guardia</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4>Guardias</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Nombre Guardia</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" id="txt_nombre_guardia" name="txt_nombre_guardia" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Dirección</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" id="txt_direccion_guardia" name="txt_direccion_guardia" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Correo</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" id="txt_correo_guardia" name="txt_correo_guardia" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Edad</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" id="txt_edad_guardia" name="txt_edad_guardia" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Teléfono</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" id="txt_telefono_guardia" name="txt_telefono_guardia" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Celular</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" id="txt_celular_guardia" name="txt_celular_guardia" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Acceso</label>
+        <div class="col-md-10">
+            @Html.DropDownList("dropdown_accesos", null, "", new { @id = "cmb_accesos", @onChange = "cmb_accesoschange(this.value)", @title = "Seleccione una Opción", @class = "form-control font selectpicker ", data_container = "body", data_live_search = "true", data_hide_disabled = "true" })
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Crear" id="btn-crear" class="btn btn-primary" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    <a href="/Guardia/Index" class="btn btn-primary">Regresar al Listado</a>
+</div>
+
+<script src="~/Content/bootstrap-select.js"></script>
+
+<script>
+    $("body").on("click", "#btn-crear", function () {
+        var estaid = document.getElementById("cmb_accesos");
+        eid = estaid.options[estaid.selectedIndex].value;
+        var nombreguardia = document.getElementById("txt_nombre_guardia").value;
+        var direccionguardia = document.getElementById("txt_direccion_guardia").value;
+        var correoguardia = document.getElementById("txt_correo_guardia").value;
+        var edadguardia = document.getElementById("txt_edad_guardia").value;
+        var telefonoguardia = document.getElementById("txt_telefono_guardia").value;
+        var celularguardia = document.getElementById("txt_celular_guardia").value;
+        var datos = new Array();
+        var dato = {};
+        dato.nombre_guardia = nombreguardia;
+        dato.direccion_guardia = direccionguardia;
+        dato.correo_guardia = correoguardia;
+        dato.edad_guardia = edadguardia;
+        dato.telefono_guardia = telefonoguardia;
+        dato.celular_guardia = celularguardia;
+        dato.idacceso = eid;
+        datos.push(dato);
+        $.ajax({
+            type: "POST",
+            url: "/Guardia/Create",
+            data: JSON.stringify(datos),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (r) {
+            }
+        });
+    });
+</script>
+

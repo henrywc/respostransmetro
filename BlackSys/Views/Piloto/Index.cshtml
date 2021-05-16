@@ -1,0 +1,64 @@
+﻿@model IEnumerable<BlackSys.Models.PilotoModel>
+
+@{
+    ViewBag.Title = "Pilotos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Listado de Pilotos</h2>
+
+<p>
+    @Html.ActionLink("Crear nuevo Piloto", "Create", null, new { @class = "btn btn-primary" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre_piloto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.direccion_piloto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.correo_piloto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.edad_piloto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.telefono_piloto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.celular_piloto)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombre_piloto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.direccion_piloto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.correo_piloto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.edad_piloto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.telefono_piloto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.celular_piloto)
+        </td>
+        <td>
+            @Html.ActionLink("Detalles", "Details", new { id = item.idpiloto, }, new { @class = "btn btn-default" }) |
+            @Html.ActionLink("Editar", "Edit", new { id = item.idpiloto, }, new { @class = "btn btn-warning" }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id = item.idpiloto, }, new { @class = "btn btn-danger" })
+        </td>
+    </tr>
+}
+
+</table>

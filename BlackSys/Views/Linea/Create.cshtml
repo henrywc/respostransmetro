@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewBag.Title = "Crear Línea";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <link href="~/Content/bootstrap-select.css" rel="stylesheet" />
+</head>
+
+<h2>Crear Línea</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Líneas</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <label class="control-label col-md-2">Nombre Línea</label>
+
+            <div class="col-md-10">
+                <input type="text" class="form-control" id="txt_nombre_linea" name="txt_nombre_linea" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Municipalidad</label>
+            <div class="col-md-10">
+                @Html.DropDownList("dropdown_municipalidades", null, "", new { @id = "cmb_municipalidades", @onChange = "cmb_municipalidadeschange(this.value)", @title = "Seleccione una Opción", @class = "form-control font selectpicker ", data_container = "body", data_live_search = "true", data_hide_disabled = "true" })
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Crear" id="btn-crear" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    <a href="/Linea/Index" class="btn btn-primary">Regresar al Listado</a>
+</div>
+
+<script src="~/Content/bootstrap-select.js"></script>
+
+<script>
+    $("body").on("click", "#btn-crear", function () {
+        var muniid = document.getElementById("cmb_municipalidades");
+        mid = muniid.options[muniid.selectedIndex].value;
+        var nombrelinea = document.getElementById("txt_nombre_linea").value;
+        var datos = new Array();
+        var dato = {};
+        dato.nombre_linea = nombrelinea;
+        dato.idmunicipalidad = mid;
+        datos.push(dato);
+        $.ajax({
+            type: "POST",
+            url: "/Linea/Create",
+            data: JSON.stringify(datos),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (r) {
+            }
+        });
+    });
+</script>

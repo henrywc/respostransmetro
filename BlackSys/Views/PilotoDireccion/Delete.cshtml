@@ -1,0 +1,77 @@
+﻿@model BlackSys.Models.Modelos_transmetro.ConsultarPilotoDireccion
+
+@{
+    ViewBag.Title = "Eliminar Educación Piloto";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Eliminar</h2>
+
+<h3>Está seguro que desea eliminarlo?</h3>
+<div>
+    <h4>Eliminar Educación Piloto</h4>
+    <hr />
+    @foreach (var lista in ViewBag.PilotosDireccion)
+    {
+        <dl class="dl-horizontal">
+            <dt>
+                Dirección:
+            </dt>
+
+            <dd>
+                @lista.direccion_piloto
+            </dd>
+
+            <dt>
+                Zona:
+            </dt>
+
+            <dd>
+                @lista.zona_piloto
+            </dd>
+
+            <dt>
+                Colonia:
+            </dt>
+
+            <dd>
+                @lista.colonia_piloto
+            </dd>
+
+            <dt>
+                Municipio:
+            </dt>
+
+            <dd>
+                @lista.municipio_piloto
+            </dd>
+
+            <dt>
+                Departamento:
+            </dt>
+
+            <dd>
+                @lista.departamento_piloto
+            </dd>
+
+            <dt>
+                Piloto:
+            </dt>
+
+            <dd>
+                @lista.nombre_piloto
+            </dd>
+
+        </dl>
+
+    }
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Eiminar" class="btn btn-danger" /> |
+            <a href="/PilotoDireccion/Index" class="btn btn-primary">Regresar al Listado</a>
+        </div>
+    }
+</div>

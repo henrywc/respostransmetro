@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "Distancias";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Listado de Distancias</h2>
+
+<p>
+    @Html.ActionLink("Crear distancia", "Create", null, new { @class = "btn btn-primary" })
+</p>
+<table class="table">
+    <tr>
+        <th class="hidden">
+            iddistancia
+        </th>
+        <th>
+            Estación origen
+        </th>
+        <th>
+            Estación destino
+        </th>
+        <th>
+            Distancia
+        </th>
+        <th>
+            Nombre Línea
+        </th>
+        <th>Opciones</th>
+    </tr>
+
+    @foreach (var lista in ViewBag.Distancias)
+    {
+<tr>
+    <td class="hidden">
+        @lista.iddistancia
+    </td>
+    <td>
+        @lista.estacion_origen
+    </td>
+    <td>
+        @lista.estacion_destino
+    </td>
+    <td>
+        @lista.distancia
+    </td>
+    <td>
+        @lista.nombre_linea
+    </td>
+    <td>
+        @Html.ActionLink("Detalles", "Details", new { id = lista.iddistancia, }, new { @class = "btn btn-default" }) |
+        @Html.ActionLink("Editar", "Edit", new { id = lista.iddistancia, }, new { @class = "btn btn-warning" }) |
+        @Html.ActionLink("Eliminar", "Delete", new { id = lista.iddistancia, }, new { @class = "btn btn-danger" })
+    </td>
+</tr>
+    }
+
+</table>
+
+

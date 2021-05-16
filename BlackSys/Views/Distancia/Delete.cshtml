@@ -1,0 +1,61 @@
+﻿@model BlackSys.Models.Modelos_transmetro.ConsultarDistancia
+
+@{
+    ViewBag.Title = "Eliminar Distancia";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Eliminar</h2>
+
+<h3>Está seguro que desea eliminarlo?</h3>
+<div>
+    <h4>Eliminar Distancia</h4>
+    <hr />
+    @foreach (var lista in ViewBag.Distancias)
+    {
+        <dl class="dl-horizontal">
+            <dt>
+                Estación Origen:
+            </dt>
+
+            <dd>
+                @lista.estacion_origen
+            </dd>
+
+            <dt>
+                Estación Destino:
+            </dt>
+
+            <dd>
+                @lista.estacion_destino
+            </dd>
+
+            <dt>
+                Distancia:
+            </dt>
+
+            <dd>
+                @lista.distancia
+            </dd>
+
+            <dt>
+                Nombre Línea:
+            </dt>
+
+            <dd>
+                @lista.nombre_linea
+            </dd>
+
+        </dl>
+
+    }
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Eiminar" class="btn btn-danger" /> |
+            @Html.ActionLink("Regresar a Listado", "Index", null, new { @class = "btn btn-primary" })
+        </div>
+    }
+</div>

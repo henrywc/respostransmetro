@@ -1,0 +1,35 @@
+﻿@model BlackSys.Models.Modelos_transmetro.ConsultarBus
+
+@{
+    ViewBag.Title = "Detalles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Detalles de Bus</h4>
+    <hr />
+    @foreach (var lista in ViewBag.Buses)
+    {
+        <dl class="dl-horizontal">
+            <div class="card-body text-center">
+
+                <h4>Bus: @lista.nombre_bus</h4>
+                <h4>Línea: @lista.nombre_linea</h4>
+                <h4>Capacidad de pasajeros: @lista.capacidad</h4>
+                <h4>Parqueo: @lista.nombre_parqueo</h4>
+                <h4>Piloto: @lista.nombre_piloto</h4>
+                <p>
+                    @Html.ActionLink("Editar", "Edit", new { id = lista.idbus, }, new { @class = "btn btn-warning" }) |
+                    <a href="/Bus/Index" class="btn btn-primary">Regresar al Listado</a>
+                </p>
+
+
+            </div>
+
+
+        </dl>
+
+    }
+</div>

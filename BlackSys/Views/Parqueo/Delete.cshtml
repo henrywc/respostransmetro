@@ -1,0 +1,46 @@
+﻿@model BlackSys.Models.Modelos_transmetro.ConsultarParqueo
+
+@{
+    ViewBag.Title = "Eliminar Parqueo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Eliminar</h2>
+
+<h3>Está seguro que desea eliminarlo?</h3>
+<div>
+    <h4>Eliminar Parqueo</h4>
+    <hr />
+    @foreach (var lista in ViewBag.Parqueos)
+    {
+
+        <dl class="dl-horizontal">
+            <dt>
+                Parqueo:
+            </dt>
+
+            <dd>
+                @lista.nombre_parqueo
+            </dd>
+
+            <dt>
+                Estación:
+            </dt>
+
+            <dd>
+                @lista.nombre_estacion
+            </dd>
+
+        </dl>
+
+    }
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+            <a href="/Parqueo/Index" class="btn btn-primary">Regresar al Listado</a>
+        </div>
+    }
+</div>

@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "Parqueos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>Listado de Parqueos</h2>
+
+<p>
+    @Html.ActionLink("Crear nuevo parqueo", "Create", null, new { @class = "btn btn-primary" })
+</p>
+<table class="table">
+    <tr>
+        <th class="hidden">
+            idparqueo
+        </th>
+        <th>
+            Nombre Parqueo
+        </th>
+        <th>
+            Nombre Estación
+        </th>
+        <th>Opciones</th>
+    </tr>
+
+    @foreach (var lista in ViewBag.Parqueos)
+    {
+        <tr>
+            <td class="hidden">
+                @lista.idparqueo
+            </td>
+            <td>
+                @lista.nombre_parqueo
+            </td>
+            <td>
+                @lista.nombre_estacion
+            </td>
+            <td>
+                @Html.ActionLink("Detalles", "Details", new { id = lista.idparqueo, }, new { @class = "btn btn-default" }) |
+                @Html.ActionLink("Editar", "Edit", new { id = lista.idparqueo, }, new { @class = "btn btn-warning" }) |
+                @Html.ActionLink("Eliminar", "Delete", new { id = lista.idparqueo, }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+
+</table>
+
+

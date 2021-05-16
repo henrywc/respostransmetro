@@ -1,0 +1,51 @@
+﻿@model BlackSys.Models.Modelos_transmetro.ConsultarDistancia
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ConsultarDistancia</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.estacion_origen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estacion_origen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estacion_destino)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estacion_destino)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.distancia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.distancia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre_linea)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre_linea)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.iddistancia }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

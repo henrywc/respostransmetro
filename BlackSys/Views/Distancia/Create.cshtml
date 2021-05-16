@@ -1,0 +1,98 @@
+﻿
+@{
+    ViewBag.Title = "Crear Distancia";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<head>
+    <link href="~/Content/bootstrap-select.css" rel="stylesheet" />
+</head>
+
+<h2>Crear Distancia entre estaciones</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4>Distancias</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        <label class="control-label col-md-2">Estación Origen</label>
+        <div class="col-md-10">
+            @Html.DropDownList("dropdown_estaciones1", null, "", new { @id = "cmb_estaciones1", @onChange = "cmb_estaciones1change(this.value)", @title = "Seleccione una Opción", @class = "form-control font selectpicker ", data_container = "body", data_live_search = "true", data_hide_disabled = "true" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Estación Destino</label>
+        <div class="col-md-10">
+            @Html.DropDownList("dropdown_estaciones2", null, "", new { @id = "cmb_estaciones2", @onChange = "cmb_estaciones2change(this.value)", @title = "Seleccione una Opción", @class = "form-control font selectpicker ", data_container = "body", data_live_search = "true", data_hide_disabled = "true" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Distancia</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" id="txt_distancia" name="txt_distancia" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Línea</label>
+        <div class="col-md-10">
+            @Html.DropDownList("dropdown_lineas", null, "", new { @id = "cmb_lineas", @onChange = "cmb_lineaschange(this.value)", @title = "Seleccione una Opción", @class = "form-control font selectpicker ", data_container = "body", data_live_search = "true", data_hide_disabled = "true" })
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Crear" id="btn-crear" class="btn btn-primary" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Regresar a Listado", "Index", null, new { @class = "btn btn-primary" })
+</div>
+
+<script src="~/Content/bootstrap-select.js"></script>
+
+<script>
+    $("body").on("click", "#btn-crear", function () {
+        var esta1id = document.getElementById("cmb_estaciones1");
+        e1id = esta1id.options[esta1id.selectedIndex].value;
+        var esta2id = document.getElementById("cmb_estaciones2");
+        e2id = esta2id.options[esta2id.selectedIndex].value;
+        if (e1id === e2id)
+        {
+            alert("No puede seleccionarse la misma estación")
+        }
+        else
+        {
+            var linid = document.getElementById("cmb_lineas");
+            lid = linid.options[linid.selectedIndex].value;
+            var distancia = document.getElementById("txt_distancia").value;
+            var datos = new Array();
+            var dato = {};
+            dato.distancia = distancia;
+            dato.idorigen = e1id;
+            dato.iddestino = e2id;
+            dato.idlinea = lid;
+            datos.push(dato);
+        }
+        $.ajax({
+            type: "POST",
+            url: "/Distancia/Create",
+            data: JSON.stringify(datos),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (r) {
+            }
+        });
+    });
+</script>

@@ -1,0 +1,55 @@
+﻿@model BlackSys.Models.Modelos_transmetro.ConsultarEstacion
+
+@{
+    ViewBag.Title = "Eliminar Estación";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Eliminar</h2>
+
+<h3>Está seguro que desea eliminarlo?</h3>
+<div>
+    <h4>Eliminar Estación</h4>
+    <hr />
+    @foreach (var lista in ViewBag.Estaciones)
+    {
+
+        <dl class="dl-horizontal">
+            <dt>
+                Estación:
+            </dt>
+
+            <dd>
+                @lista.nombre_estacion
+            </dd>
+
+            <dt>
+                Municipalidad:
+            </dt>
+
+            <dd>
+                @lista.nombre_municipalidad
+            </dd>
+
+            <dt>
+                Capacidad estación:
+            </dt>
+
+            <dd>
+                @lista.capacidad
+            </dd>
+
+
+        </dl>
+
+    }
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+    <div class="form-actions no-color">
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a href="/Estacion/Index" class="btn btn-primary">Regresar al Listado</a>
+    </div>
+    }
+</div>

@@ -1,0 +1,33 @@
+﻿@model BlackSys.Models.Modelos_transmetro.ConsultarPilotoEducacion
+
+@{
+    ViewBag.Title = "Detalles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Detalle de Educación Piloto</h4>
+    <hr />
+    @foreach (var lista in ViewBag.PilotosEducacion)
+    {
+        <dl class="dl-horizontal">
+
+            <div class="card-body text-center">
+
+                <h4>Nombre: @lista.nombre_piloto</h4>
+                <h4>Último nivel cursado: @lista.nivelcursado</h4>
+                <h4>Fecha último nivel cursado: @lista.fechanivelcursado</h4>
+                <h4>Centro Educativo: @lista.centroeducativo</h4>
+                <p>
+                    @Html.ActionLink("Editar", "Edit", new { id = lista.idpilotos_educacion, }, new { @class = "btn btn-warning" }) |
+                    <a href="/PilotoEducacion/Index" class="btn btn-primary">Regresar al Listado</a>
+                </p>
+
+            </div>
+
+        </dl>
+
+    }
+</div>

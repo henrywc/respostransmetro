@@ -1,0 +1,34 @@
+﻿@model BlackSys.Models.Modelos_transmetro.ConsultarEstacion
+
+@{
+    ViewBag.Title = "Detalles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Detalle de Estación</h4>
+    <hr />
+    @foreach (var lista in ViewBag.Estaciones)
+    {
+        <dl class="dl-horizontal">
+
+            <div class="card-body text-center">
+
+                <h4>Estación: @lista.nombre_estacion</h4>
+                <h4>Municipalidad: @lista.nombre_municipalidad</h4>
+                <h4>Capacidad estación: @lista.capacidad</h4>
+                <p>
+                    @Html.ActionLink("Editar", "Edit", new { id = lista.idestacion, }, new { @class = "btn btn-warning" }) |
+                    <a href="/Estacion/Index" class="btn btn-primary">Regresar al Listado</a>
+                </p>
+
+
+            </div>
+
+
+        </dl>
+
+    }
+</div>

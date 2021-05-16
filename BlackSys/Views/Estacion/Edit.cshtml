@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <link href="~/Content/bootstrap-select.css" rel="stylesheet" />
+</head>
+
+
+<h2>Editar Estaciones</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4>Estaciones</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <input type="text" id="txt_idestacion" name="txt_idestacion" value="@ViewBag.idestacion" class="hidden" />
+    <div class="form-group">
+        <label class="control-label col-md-2">Nombre Estación</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" id="txt_nombre_estacion" name="txt_nombre_estacion" value="@ViewBag.nombreestacion" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Municipalidad</label>
+        <div class="col-md-10">
+            @Html.DropDownList("dropdown_municipalidades", null, "", new { @id = "cmb_municipalidades", @onChange = "cmb_municipalidadeschange(this.value)", @title = "Seleccione una Opción", @class = "form-control font selectpicker ", data_container = "body", data_live_search = "true", data_hide_disabled = "true" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Capacidad Estación</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" id="txt_capacidad" name="txt_capacidad" value="@ViewBag.capacidad" />
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Guardar" class="btn btn-primary" id="btn-editar" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    <a href="/Estacion/Index" class="btn btn-primary">Regresar al Listado</a>
+</div>
+
+<script src="~/Content/bootstrap-select.js"></script>
+
+<script>
+    $("body").on("click", "#btn-editar", function () {
+        var muniid = document.getElementById("cmb_municipalidades");
+        mid = muniid.options[muniid.selectedIndex].value;
+        var nombreestacion = document.getElementById("txt_nombre_estacion").value;
+        var capacidad = document.getElementById("txt_capacidad").value;
+        var idestacion = document.getElementById("txt_idestacion").value;
+        var datos = new Array();
+        var dato = {};
+        dato.nombre_estacion = nombreestacion;
+        dato.capacidad = capacidad;
+        dato.idmunicipalidad = mid;
+        dato.idestacion = idestacion;
+        datos.push(dato);
+        $.ajax({
+            type: "POST",
+            url: "/Estacion/Edit",
+            data: JSON.stringify(datos),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (r) {
+            }
+        });
+    });
+</script>
+
+

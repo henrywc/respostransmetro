@@ -1,0 +1,124 @@
+﻿
+@{
+    ViewBag.Title = "LineasEstacionesReporte";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Distancia por Línea</h2>
+
+<head>
+    <link href="~/Content/bootstrap-select.css" rel="stylesheet" />
+</head>
+
+@using (Html.BeginForm("LineasEstacionesReporte", "LineasEstacionesReporte", FormMethod.Post, new { @id = "frmInicio", @class = "form-horizontal   " }))
+{
+    <div class="form-group row">
+        <label for="txt_project" class="col-sm-1 col-form-label">Selecciona una Línea</label>
+        <div class="form-group col-xs-1">
+            <input type="number" class="form-control hidden" name="idlinea" id="idlinea" value="">
+        </div>
+        <div class="form-group col-sm-5">
+            @Html.DropDownList("dropdown_linea", null, "", new { @id = "cmb_linea", @onChange = "cmb_changelinea(this.value)", @title = "Selecciona una Línea", @class = "form-control font selectpicker ", data_container = "body", data_live_search = "true", data_hide_disabled = "true" })
+        </div>
+    </div>
+}
+
+
+
+<form method="post" action="" class="form-horizontal   " id="frmcontent" onSubmit="window.location.reset()">
+    @if (ViewBag.Estaciones == null)
+    {
+
+    }
+    else
+    {
+        <div class="form-group row">
+            <label for="txt_project" class="col-md-6 col-form-label"><b>@ViewBag.Mensaje</b></label>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="portlet box blue">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="fa fa-user"></i>Listado de Estaciones
+                        </div>
+
+                        <div class="tools">
+                            <a href="javascript:;" class="collapse"> </a>
+                            <a href="javascript:;" class="fullscreen"> </a>
+                        </div>
+
+                    </div>
+                    <div class="portlet-body">
+                        <table class="table table-striped table-bordered table-hover dt-responsive" id="sys-table" cellspacing="0">
+                            <thead>
+                                <tr class="">
+                                    <th class="col-id">Código de Estación</th>
+                                    <th class="col-name">Nombre Estación</th>
+                                    <th class="col-name">Orden</th>
+                                    <th class="col-id">Distancia siguiente estación</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @foreach (var i in ViewBag.Estaciones)
+                                {
+                                    <tr class="">
+                                        <td>@i.idestacion</td>
+                                        <td>@i.nombre_estacion</td>
+                                        <td>@i.orden</td>
+                                        <td>@i.distancia</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @*<div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="button" value="Guardar" id="btn-guardar" class="btn btn-primary" />
+            </div>
+        </div>*@
+
+    }
+</form>
+
+<script src="~/Content/bootstrap-select.js"></script>
+
+<script>
+    function cmb_changelinea(valor) {
+        document.getElementById('idlinea').value = valor;
+        document.getElementById('frmInicio').submit();
+    }
+</script>
+
+<script>
+    $("body").on("click", "#btn-guardar", function () {
+        var linid = document.getElementById("cmb_linea");
+        lid = linid.options[linid.selectedIndex].value;
+        var datos = new Array();
+        $("#sys-table input[type=checkbox]:checked").each(function () {
+            var row = $(this).closest("tr");
+            var dato = {};
+            dato.idlinea = lid;
+            dato.idestacion = row.find("TD").eq(0).html();
+            dato.orden = row.find("input[name=orden]").val();
+            dato.distancia = row.find("input[name=distancia]").val();
+            datos.push(dato);
+        });
+        $.ajax({
+            type: "POST",
+            url: "/LineasEstacionesReporte/InsertarLineasEstacionesReporte",
+            data: JSON.stringify(datos),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (r) {
+                window.location.href = window.location.href;
+            }
+        });
+    });
+</script>

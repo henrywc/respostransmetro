@@ -1,0 +1,33 @@
+﻿@model BlackSys.Models.MunicipalidadModel
+
+@{
+    ViewBag.Title = "Detalles Municipalidad";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Detalles de Municipalidad</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <h4>Municipalidad: </h4>
+
+            @*@Html.DisplayNameFor(model => model.nombre_municipalidad)*@
+        </dt>
+
+        <dd>
+            <h4>@Html.DisplayFor(model => model.nombre_municipalidad)</h4>
+
+            @*@Html.DisplayFor(model => model.nombre_municipalidad)*@
+        </dd>
+
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.idmunicipalidad, }, new { @class = "btn btn-warning" }) |
+    @Html.ActionLink("Regresar a Listado", "Index", null, new { @class = "btn btn-primary" })
+</p>

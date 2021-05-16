@@ -1,0 +1,44 @@
+﻿@model BlackSys.Models.MunicipalidadModel
+
+@{
+    ViewBag.Title = "Eliminar Municipalidad";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Eliminar</h2>
+
+<h3>Está seguro que desea eliminarlo?</h3>
+<div>
+    <h4>Eliminar Municipalidad</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            <h4>Municipalidad: </h4>
+        </dt>
+
+        <dd>
+            <h4>@Html.DisplayFor(model => model.nombre_municipalidad)</h4>
+        </dd>
+
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.nombre_municipalidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre_municipalidad)
+        </dd>*@
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+            @Html.ActionLink("Regresar a Listado", "Index", null, new { @class = "btn btn-primary" })
+        </div>
+    }
+</div>

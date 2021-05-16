@@ -1,0 +1,93 @@
+﻿@model BlackSys.Models.LoginViewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Transmetro Login</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" type="text/css" href="~/Content/template/css/bootstrap.min.css">
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' />
+    <link rel="stylesheet" type="text/css" href="~/Content/template/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/template/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/template/css/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/template/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/template/css/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/template/css/util.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/template/css/main.css">
+    <link rel="shortcut icon" href="~/Content/template/layout/img/Fabicon.ico" />
+</head>
+
+<body>
+
+    <div class="limiter">
+            <div class="container-login100">
+                <div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
+                    
+                    @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "login100-form validate-form flex-sb flex-w" }))
+                    {
+                        @Html.AntiForgeryToken()
+
+                
+                        <span class="login100-form-title p-b-34">
+                            <center>
+                                @*<img src="~/Content/template/layout/img/EFEJOTA.jpeg" style="height:115px;width:150px;">*@
+                                <img src="~/Content/template/layout/img/LogoTransmetro.jpg" style="height:115px;width:400px;">
+                            </center>
+                        </span>
+
+
+                        <div class="wrap-input100 validate-input m-b-36" data-validate="Escribe un Usuario">
+
+                            @Html.TextBoxFor(m => m.UserName, new { @class = "input100", placeholder = "Usuario" })
+                            <span class="focus-input100"></span>
+                            @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger text-title" })
+
+                        </div>
+                        <div class="wrap-input100 validate-input m-b-12" data-validate="Escribe una Contraseña">
+                            @Html.PasswordFor(m => m.Password, new { @class = "input100", placeholder = "Contraseña" })
+                            <span class="focus-input100"></span>
+                            <span style="color:red">@Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger text-title" })</span>
+                            <span class="focus-input100"></span>
+                        </div>
+
+                        <div class="container-login100-form-btn">
+                            <button class="login100-form-btn">
+                                Iniciar Sesion
+                            </button>
+                        </div>
+
+                        <span style="color:red">@Html.ValidationSummary(true, "", new { @class = "text-danger text-title" })</span>
+
+                        <div class="w-full text-center p-t-27 p-b-239">
+                            <span class="txt1">
+                            </span>
+                            <a href="#" class="txt2">
+                            </a>
+                        </div>
+                        <div class="w-full text-center">
+                        </div>
+
+                    }
+
+                    <div id="dropDownSelect1"></div>
+                </div>
+            </div>
+        </div>
+
+    <script src="js/main.js"></script>
+    <script src="~/Content/template/scripts/jquery-3.2.1.min.js"></script>
+    <script src="~/Content/template/scripts/animsition.min.js"></script>
+    <script src="~/Content/template/scripts/popper.js"></script>
+    <script src="~/Content/template/scripts/bootstrap.min.js"></script>
+    <script src="~/Content/template/scripts/select2.min.js"></script>
+    <script src="~/Content/template/scripts/moment.min.js"></script>
+    <script src="~/Content/template/scripts/daterangepicker.js"></script>
+    <script src="~/Content/template/scripts/countdowntime.js"></script>
+    <script src="~/Content/template/scripts/main.js"></script>
+</body>
+</html>

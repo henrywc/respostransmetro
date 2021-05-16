@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Estaciones";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Listado de Estaciones</h2>
+
+<p>
+    @Html.ActionLink("Crear nueva estación", "Create", null, new { @class = "btn btn-primary" })
+</p>
+<table class="table">
+    <tr>
+        <th class="hidden">
+            idestacion
+        </th>
+        <th>
+            Nombre Estación
+        </th>
+        <th>
+            Nombre Municipalidad
+        </th>
+        <th>
+            Capacidad estación
+        </th>
+        <th>Opciones</th>
+    </tr>
+
+    @foreach (var lista in ViewBag.Estaciones)
+    {
+        <tr>
+            <td class="hidden">
+                @lista.idestacion
+            </td>
+            <td>
+                @lista.nombre_estacion
+            </td>
+            <td>
+                @lista.nombre_municipalidad
+            </td>
+            <td>
+                @lista.capacidad
+            </td>
+            <td>
+                @Html.ActionLink("Detalles", "Details", new { id = lista.idestacion, }, new { @class = "btn btn-default" }) |
+                @Html.ActionLink("Editar", "Edit", new { id = lista.idestacion, }, new { @class = "btn btn-warning" }) |
+                @Html.ActionLink("Eliminar", "Delete", new { id = lista.idestacion, }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+
+</table>
+
