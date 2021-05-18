@@ -1217,6 +1217,7 @@
     <Compile Include="Models\Modelos transmetro\PilotoEducacionModel.cs" />
     <Compile Include="Models\Modelos transmetro\PilotoModel.cs" />
     <Compile Include="Models\Modelos transmetro\SimulacionBusEstacion.cs" />
+    <Compile Include="Models\Modelos transmetro\ValidarLinea.cs" />
     <Compile Include="Models\MunicipalidadModel.cs" />
     <Compile Include="Models\Permission.cs" />
     <Compile Include="Models\PermissionMenu.cs" />

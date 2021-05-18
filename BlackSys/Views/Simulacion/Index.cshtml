@@ -62,116 +62,153 @@
         //    if (personas_estacion === 0 || personas_estacion < 50) {
         document.getElementById("cmb_bus").disabled = true;
         document.getElementById("capestacion").innerHTML = "";
-        var countDownDate = new Date();
-        countDownDate.setMinutes(countDownDate.getMinutes() + 1);
-        // Update the count down every 1 second
-        var x = setInterval(function () {
-
-            // Get today's date and time
-            var now = new Date().getTime();
-
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
-
-            // Time calculations for days, hours, minutes and seconds
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Output the result in an element with id="demo"
-            document.getElementById("Mensaje").innerHTML = "Los pasajeros están abordando. Tiempo de espera: " + minutes + "m " + seconds + "s ";
-            document.getElementById("Mensaje4").innerHTML = "";
-            // If the count down is over, write some text
-            if (distance < 0) {
-                clearInterval(x);
-                var datos = new Array();
-                var dato = {};
-
-                var idestacion = document.getElementById("cmb_estaciones");
-                ides = idestacion.options[idestacion.selectedIndex].value;
-
-                var idbus = document.getElementById("cmb_bus");
-                idb = idbus.options[idbus.selectedIndex].value;
-
-                dato.idbus = idb;
-                dato.idestacion = ides;
-
-                datos.push(dato);
 
 
-                $.ajax({
-                    type: "POST",
-                    url: "/Simulacion/ValidarCapacidad/",
-                    data: JSON.stringify(datos),
-                    contentType: "application/json; charset=utf-8",
-                    dataType: "json",
-                    success: function (datos) {
+        var datos = new Array();
+        var dato = {};
 
-                        if (datos.PorcentajeSubidosBus <= 25) {
+        var idestacion = document.getElementById("cmb_estaciones");
+        ides = idestacion.options[idestacion.selectedIndex].value;
 
-                            var totalbus = (datos.pasajerosenbus - datos.pasajerosbajan) + datos.pasajerosabordan;
-                            document.getElementById("Mensaje").innerHTML = "El bus viene con "
-                                + datos.pasajerosenbus + " pasajeros y descienden en la Estación " + datos.pasajerosbajan + " pasajeros.";
-                            document.getElementById("Mensaje2").innerHTML = "La capacidad del bus es de " + datos.capacidadbus + " pasajeros y abordan " + datos.pasajerosabordan + " pasajeros.";
-                            document.getElementById("Mensaje3").innerHTML = "El total de pasajeros para este viaje es de " + totalbus + ". El bus debe esperar 5 min.";
+        var idbus = document.getElementById("cmb_bus");
+        idb = idbus.options[idbus.selectedIndex].value;
+
+        dato.idbus = idb;
+        dato.idestacion = ides;
+
+        datos.push(dato);
 
 
-                            var countDownDate2 = new Date();
-                            countDownDate2.setMinutes(countDownDate2.getMinutes() + 5);
-                            // Update the count down every 1 second
-                            var y = setInterval(function () {
+        $.ajax({
+            type: "POST",
+            url: "/Simulacion/ValidarLinea/",
+            data: JSON.stringify(datos),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (datos) {
 
-                                // Get today's date and time
-                                var now2 = new Date().getTime();
+                if (datos.Mensaje != 'Existe') {
+                    document.getElementById("Mensaje").innerHTML = "El bus no pertenece a la linea para esa estacion";
+                    document.getElementById("cmb_bus").disabled = false;
+                }
+                else {
 
-                                // Find the distance between now and the count down date
-                                var dist = countDownDate2 - now2;
+                    var countDownDate = new Date();
+                    countDownDate.setMinutes(countDownDate.getMinutes() + 1);
+                    // Update the count down every 1 second
+                    var x = setInterval(function () {
 
-                                // Time calculations for days, hours, minutes and seconds
-                                var minutes2 = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
-                                var seconds2 = Math.floor((dist % (1000 * 60)) / 1000);
+                        // Get today's date and time
+                        var now = new Date().getTime();
 
-                                // Output the result in an element with id="demo"
-                                document.getElementById("Mensaje4").innerHTML = minutes2 + "m " + seconds2 + "s ";
+                        // Find the distance between now and the count down date
+                        var distance = countDownDate - now;
 
-                                // If the count down is over, write some text
-                                if (dist < 0) {
-                                    clearInterval(x);
-                                    document.getElementById("Mensaje4").innerHTML = "Espera finalizada, el bus debe partir ";
+                        // Time calculations for days, hours, minutes and seconds
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                                    document.getElementById("cmb_bus").disabled = false;
+                        // Output the result in an element with id="demo"
+                        document.getElementById("Mensaje").innerHTML = "Los pasajeros están abordando. Tiempo de espera: " + minutes + "m " + seconds + "s ";
+                        document.getElementById("Mensaje4").innerHTML = "";
+                        // If the count down is over, write some text
+                        if (distance < 0) {
+                            clearInterval(x);
+                            var datos = new Array();
+                            var dato = {};
+
+                            var idestacion = document.getElementById("cmb_estaciones");
+                            ides = idestacion.options[idestacion.selectedIndex].value;
+
+                            var idbus = document.getElementById("cmb_bus");
+                            idb = idbus.options[idbus.selectedIndex].value;
+
+                            dato.idbus = idb;
+                            dato.idestacion = ides;
+
+                            datos.push(dato);
+
+
+                            $.ajax({
+                                type: "POST",
+                                url: "/Simulacion/ValidarCapacidad/",
+                                data: JSON.stringify(datos),
+                                contentType: "application/json; charset=utf-8",
+                                dataType: "json",
+                                success: function (datos) {
+
+                                    if (datos.PorcentajeSubidosBus <= 25) {
+
+                                        var totalbus = (datos.pasajerosenbus - datos.pasajerosbajan) + datos.pasajerosabordan;
+                                        document.getElementById("Mensaje").innerHTML = "El bus viene con "
+                                            + datos.pasajerosenbus + " pasajeros y descienden en la Estación " + datos.pasajerosbajan + " pasajeros.";
+                                        document.getElementById("Mensaje2").innerHTML = "La capacidad del bus es de " + datos.capacidadbus + " pasajeros y abordan " + datos.pasajerosabordan + " pasajeros.";
+                                        document.getElementById("Mensaje3").innerHTML = "El total de pasajeros para este viaje es de " + totalbus + ". El bus debe esperar 5 min.";
+
+
+                                        var countDownDate2 = new Date();
+                                        countDownDate2.setMinutes(countDownDate2.getMinutes() + 5);
+                                        // Update the count down every 1 second
+                                        var y = setInterval(function () {
+
+                                            // Get today's date and time
+                                            var now2 = new Date().getTime();
+
+                                            // Find the distance between now and the count down date
+                                            var dist = countDownDate2 - now2;
+
+                                            // Time calculations for days, hours, minutes and seconds
+                                            var minutes2 = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
+                                            var seconds2 = Math.floor((dist % (1000 * 60)) / 1000);
+
+                                            // Output the result in an element with id="demo"
+                                            document.getElementById("Mensaje4").innerHTML = minutes2 + "m " + seconds2 + "s ";
+
+                                            // If the count down is over, write some text
+                                            if (dist < 0) {
+                                                clearInterval(x);
+                                                document.getElementById("Mensaje4").innerHTML = "Espera finalizada, el bus debe partir ";
+
+                                                document.getElementById("cmb_bus").disabled = false;
+                                            }
+                                        }, 1000);
+
+                                    }
+                                    else {
+                                        var totalbus = (datos.pasajerosenbus - datos.pasajerosbajan) + datos.pasajerosabordan;
+                                        document.getElementById("Mensaje").innerHTML = "El bus viene con "
+                                            + datos.pasajerosenbus + " pasajeros y descienden en la Estación " + datos.pasajerosbajan + " pasajeros.";
+                                        document.getElementById("Mensaje2").innerHTML = "La capacidad del bus es de " + datos.capacidadbus + " pasajeros y abordan " + datos.pasajerosabordan + " pasajeros.";
+                                        document.getElementById("Mensaje3").innerHTML = "El total de pasajeros para este viaje es de " + totalbus + ". El bus debe partir a la siguiente estación.";
+                                        document.getElementById("cmb_bus").disabled = false;
+                                    }
                                 }
-                            }, 1000);
+                            });
+                        }
+                    }, 1000);
+                    /*}*/
+                    //else {
+                    //    if (personas_estacion > 200) {
+                    //        document.getElementById("capestacion").innerHTML = "";
+                    //        document.getElementById("Mensaje").innerHTML = "El bus tiene un capacidad de " + capacidadbus + " y el numero de pasajeros 200 es  buen viaje";
+                    //        document.getElementById("cmb_bus").disabled = false;
+                    //        personas_estacion = 0
+                    //    }
+                    //    else {
+                    //        document.getElementById("capestacion").innerHTML = "";
+                    //        document.getElementById("Mensaje").innerHTML = "El bus tiene un capacidad de " + capacidadbus + " y el numero de pasajeros " + personas_estacion + " es  buen viaje";
+                    //        document.getElementById("cmb_bus").disabled = false;
+                    //        personas_estacion = 0
+                    //    }
 
-                        }
-                        else {
-                            var totalbus = (datos.pasajerosenbus - datos.pasajerosbajan) + datos.pasajerosabordan;
-                            document.getElementById("Mensaje").innerHTML = "El bus viene con "
-                                + datos.pasajerosenbus + " pasajeros y descienden en la Estación " + datos.pasajerosbajan + " pasajeros.";
-                            document.getElementById("Mensaje2").innerHTML = "La capacidad del bus es de " + datos.capacidadbus + " pasajeros y abordan " + datos.pasajerosabordan + " pasajeros.";
-                            document.getElementById("Mensaje3").innerHTML = "El total de pasajeros para este viaje es de " + totalbus + ". El bus debe partir a la siguiente estación.";
-                            document.getElementById("cmb_bus").disabled = false;
-                        }
-                    }
-                });
+                    //}
+                }
+
             }
-        }, 1000);
-        /*}*/
-        //else {
-        //    if (personas_estacion > 200) {
-        //        document.getElementById("capestacion").innerHTML = "";
-        //        document.getElementById("Mensaje").innerHTML = "El bus tiene un capacidad de " + capacidadbus + " y el numero de pasajeros 200 es  buen viaje";
-        //        document.getElementById("cmb_bus").disabled = false;
-        //        personas_estacion = 0
-        //    }
-        //    else {
-        //        document.getElementById("capestacion").innerHTML = "";
-        //        document.getElementById("Mensaje").innerHTML = "El bus tiene un capacidad de " + capacidadbus + " y el numero de pasajeros " + personas_estacion + " es  buen viaje";
-        //        document.getElementById("cmb_bus").disabled = false;
-        //        personas_estacion = 0
-        //    }
+        });
 
-        //}
     }
+
     function simular() {
         document.getElementById("cmb_bus").disabled = true;
         var idestacion = document.getElementById("cmb_estaciones");
@@ -200,5 +237,6 @@
     }
 
 </script>
+
 
 

@@ -96,5 +96,38 @@ namespace BlackSys.Controllers
             var datos = lst.First();
             return Json(datos, JsonRequestBehavior.AllowGet);
         }
+        public JsonResult ValidarLinea(List<SimulacionBusEstacion> datos)
+        {
+            var msg = "";
+            List<ValidarLinea> lst = new List<ValidarLinea>();
+            foreach (var y in datos)
+            {
+                IEnumerable<ValidarLinea> Mensaje = db.Database.SqlQuery<ValidarLinea>("[SP_VALIDARLINEA]" + y.idbus + "," + y.idestacion).ToList();
+
+                foreach (var x in Mensaje)
+                {
+                    msg = x.Mensaje;
+
+                }
+
+                foreach (var x in Mensaje)
+                {
+                    lst.Add(new ValidarLinea
+                    {
+
+                        Mensaje = x.Mensaje,
+                    });
+                }
+            }
+            var datos1 = lst.First();
+            return Json(datos1, JsonRequestBehavior.AllowGet);
+        }
+
     }
+
+
+
+
+
+
 }
