@@ -140,9 +140,17 @@
                                     if (datos.PorcentajeSubidosBus <= 25) {
 
                                         var totalbus = (datos.pasajerosenbus - datos.pasajerosbajan) + datos.pasajerosabordan;
+                                        if (totalbus > datos.capacidadbus)
+                                        {
+                                            totalbus = datos.capacidadbus;
+                                        }
+                                        var pasajerosabordan = datos.pasajerosabordan
+                                        if (datos.pasajerosabordan > datos.capacidadbus) {
+                                            pasajerosabordan = datos.capacidadbus - (datos.pasajerosenbus - datos.pasajerosbajan);
+                                        }
                                         document.getElementById("Mensaje").innerHTML = "El bus viene con "
                                             + datos.pasajerosenbus + " pasajeros y descienden en la Estación " + datos.pasajerosbajan + " pasajeros.";
-                                        document.getElementById("Mensaje2").innerHTML = "La capacidad del bus es de " + datos.capacidadbus + " pasajeros y abordan " + datos.pasajerosabordan + " pasajeros.";
+                                        document.getElementById("Mensaje2").innerHTML = "La capacidad del bus es de " + datos.capacidadbus + " pasajeros y abordan " + pasajerosabordan + " pasajeros.";
                                         document.getElementById("Mensaje3").innerHTML = "El total de pasajeros para este viaje es de " + totalbus + ". El bus debe esperar 5 min.";
 
 
@@ -176,9 +184,18 @@
                                     }
                                     else {
                                         var totalbus = (datos.pasajerosenbus - datos.pasajerosbajan) + datos.pasajerosabordan;
+                                        if (totalbus > datos.capacidadbus)
+                                        {
+                                            totalbus = datos.capacidadbus;
+                                        }
+                                        var pasajerosabordan = datos.pasajerosabordan
+                                        if (datos.pasajerosabordan > datos.capacidadbus)
+                                        {
+                                            pasajerosabordan = datos.capacidadbus - (datos.pasajerosenbus - datos.pasajerosbajan);    
+                                        }
                                         document.getElementById("Mensaje").innerHTML = "El bus viene con "
                                             + datos.pasajerosenbus + " pasajeros y descienden en la Estación " + datos.pasajerosbajan + " pasajeros.";
-                                        document.getElementById("Mensaje2").innerHTML = "La capacidad del bus es de " + datos.capacidadbus + " pasajeros y abordan " + datos.pasajerosabordan + " pasajeros.";
+                                        document.getElementById("Mensaje2").innerHTML = "La capacidad del bus es de " + datos.capacidadbus + " pasajeros y abordan " + pasajerosabordan + " pasajeros.";
                                         document.getElementById("Mensaje3").innerHTML = "El total de pasajeros para este viaje es de " + totalbus + ". El bus debe partir a la siguiente estación.";
                                         document.getElementById("cmb_bus").disabled = false;
                                     }
